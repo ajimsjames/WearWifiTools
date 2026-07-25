@@ -3,8 +3,8 @@
 # min_api: 30
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: f588a72
-# pg_map_hash: SHA-256 f588a7219cd778be601ec04b87b649b78faa2f44bfb985fa3b435521853a04e9
+# pg_map_id: 5cb49d4
+# pg_map_hash: SHA-256 5cb49d4eaa10c53977d1b09a70d882a3f6951123f58646b5f77918951dc0d13a
 android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
 # {"id":"sourceFile","fileName":"RemoteActionCompatParcelizer.java"}
     0:3:void <init>():11:11 -> <init>
@@ -103445,10 +103445,10 @@ com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt -> com.example.we
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lj1/f;"}
     kotlin.jvm.functions.Function3 lambda-4 -> lambda-4
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lj1/f;"}
-    7:21:void <clinit>():126:126 -> <clinit>
-    22:32:void <clinit>():132:132 -> <clinit>
-    33:43:void <clinit>():138:138 -> <clinit>
-    44:52:void <clinit>():144:144 -> <clinit>
+    7:21:void <clinit>():127:127 -> <clinit>
+    22:32:void <clinit>():133:133 -> <clinit>
+    33:43:void <clinit>():139:139 -> <clinit>
+    44:52:void <clinit>():145:145 -> <clinit>
     0:2:kotlin.jvm.functions.Function3 getLambda-1$app_release():0:0 -> getLambda-1$app_release
       # {"id":"com.android.tools.r8.residualsignature","signature":"()Lj1/f;"}
     0:2:kotlin.jvm.functions.Function3 getLambda-2$app_release():0:0 -> getLambda-2$app_release
@@ -103461,26 +103461,26 @@ com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-1$1 -> com
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):127:127 -> invoke
-    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):126:126 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):128:128 -> invoke
+    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):127:127 -> invoke
 com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-2$1 -> com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-2$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):133:133 -> invoke
-    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):132:132 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):134:134 -> invoke
+    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):133:133 -> invoke
 com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-3$1 -> com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-3$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):139:139 -> invoke
-    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):138:138 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):140:140 -> invoke
+    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):139:139 -> invoke
 com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-4$1 -> com.example.wearwifitools.ui.ComposableSingletons$MainScreenKt$lambda-4$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):145:145 -> invoke
-    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):144:144 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):146:146 -> invoke
+    3:3:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):145:145 -> invoke
 com.example.wearwifitools.ui.ComposableSingletons$NetworksScreenKt -> com.example.wearwifitools.ui.ComposableSingletons$NetworksScreenKt:
 # {"id":"sourceFile","fileName":"NetworksScreen.kt"}
     kotlin.jvm.functions.Function3 lambda-1 -> lambda-1
@@ -103666,7 +103666,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/k;I)V"}
     2:20:void MainScreen(androidx.compose.runtime.Composer,int):33:33 -> MainScreen
     2:20:void MainScreen(u.Composer,int):0 -> MainScreen
-    21:26:void MainScreen(androidx.compose.runtime.Composer,int):162:162 -> MainScreen
+    21:26:void MainScreen(androidx.compose.runtime.Composer,int):163:163 -> MainScreen
     21:26:void MainScreen(u.Composer,int):0 -> MainScreen
     27:28:void MainScreen$refreshData(kotlinx.coroutines.CoroutineScope,com.example.wearwifitools.wifi.WifiManagerHelper,androidx.compose.runtime.MutableState):50:50 -> MainScreen
     27:28:androidx.compose.runtime.ProvidableCompositionLocal androidx.compose.ui.platform.AndroidCompositionLocals_androidKt.getLocalContext():50 -> MainScreen
@@ -103678,7 +103678,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     33:40:void MainScreen(androidx.compose.runtime.Composer,int):34:34 -> MainScreen
     33:40:void MainScreen(u.Composer,int):0 -> MainScreen
     41:44:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    41:44:void MainScreen(androidx.compose.runtime.Composer,int):183 -> MainScreen
+    41:44:void MainScreen(androidx.compose.runtime.Composer,int):184 -> MainScreen
     41:44:void MainScreen(u.Composer,int):0 -> MainScreen
     45:48:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> MainScreen
     45:48:void MainScreen(androidx.compose.runtime.Composer,int):35 -> MainScreen
@@ -103686,7 +103686,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     49:53:void MainScreen(androidx.compose.runtime.Composer,int):35:35 -> MainScreen
     49:53:void MainScreen(u.Composer,int):0 -> MainScreen
     54:56:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    54:56:void MainScreen(androidx.compose.runtime.Composer,int):186 -> MainScreen
+    54:56:void MainScreen(androidx.compose.runtime.Composer,int):187 -> MainScreen
     54:56:void MainScreen(u.Composer,int):0 -> MainScreen
     57:59:void MainScreen(androidx.compose.runtime.Composer,int):35:35 -> MainScreen
     57:59:void MainScreen(u.Composer,int):0 -> MainScreen
@@ -103700,7 +103700,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     72:74:void MainScreen(androidx.compose.runtime.Composer,int):36 -> MainScreen
     72:74:void MainScreen(u.Composer,int):0 -> MainScreen
     75:80:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    75:80:void MainScreen(androidx.compose.runtime.Composer,int):194 -> MainScreen
+    75:80:void MainScreen(androidx.compose.runtime.Composer,int):195 -> MainScreen
     75:80:void MainScreen(u.Composer,int):0 -> MainScreen
     81:84:kotlinx.coroutines.CoroutineScope androidx.compose.runtime.EffectsKt.rememberCoroutineScope(kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int,int):491:491 -> MainScreen
     81:84:void MainScreen(androidx.compose.runtime.Composer,int):36 -> MainScreen
@@ -103709,32 +103709,32 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     85:89:void MainScreen(androidx.compose.runtime.Composer,int):36 -> MainScreen
     85:89:void MainScreen(u.Composer,int):0 -> MainScreen
     90:93:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    90:93:void MainScreen(androidx.compose.runtime.Composer,int):200 -> MainScreen
+    90:93:void MainScreen(androidx.compose.runtime.Composer,int):201 -> MainScreen
     90:93:void MainScreen(u.Composer,int):0 -> MainScreen
     94:96:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
     94:96:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    94:96:void MainScreen(androidx.compose.runtime.Composer,int):193 -> MainScreen
+    94:96:void MainScreen(androidx.compose.runtime.Composer,int):194 -> MainScreen
     94:96:void MainScreen(u.Composer,int):0 -> MainScreen
     97:98:kotlinx.coroutines.CoroutineScope androidx.compose.runtime.EffectsKt.rememberCoroutineScope(kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int,int):489:489 -> MainScreen
     97:98:void MainScreen(androidx.compose.runtime.Composer,int):36 -> MainScreen
     97:98:void MainScreen(u.Composer,int):0 -> MainScreen
     99:100:kotlinx.coroutines.CoroutineScope androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller.getCoroutineScope():424:424 -> MainScreen
-    99:100:void MainScreen(androidx.compose.runtime.Composer,int):203 -> MainScreen
+    99:100:void MainScreen(androidx.compose.runtime.Composer,int):204 -> MainScreen
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
     99:100:void MainScreen(u.Composer,int):0 -> MainScreen
     101:106:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
     101:106:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    101:106:void MainScreen(androidx.compose.runtime.Composer,int):203 -> MainScreen
+    101:106:void MainScreen(androidx.compose.runtime.Composer,int):204 -> MainScreen
     101:106:void MainScreen(u.Composer,int):0 -> MainScreen
     107:109:void MainScreen(androidx.compose.runtime.Composer,int):36:36 -> MainScreen
     107:109:void MainScreen(u.Composer,int):0 -> MainScreen
     110:115:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    110:115:void MainScreen(androidx.compose.runtime.Composer,int):204 -> MainScreen
+    110:115:void MainScreen(androidx.compose.runtime.Composer,int):205 -> MainScreen
     110:115:void MainScreen(u.Composer,int):0 -> MainScreen
     116:120:void MainScreen(androidx.compose.runtime.Composer,int):37:37 -> MainScreen
     116:120:void MainScreen(u.Composer,int):0 -> MainScreen
     121:123:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    121:123:void MainScreen(androidx.compose.runtime.Composer,int):207 -> MainScreen
+    121:123:void MainScreen(androidx.compose.runtime.Composer,int):208 -> MainScreen
     121:123:void MainScreen(u.Composer,int):0 -> MainScreen
     124:126:void MainScreen(androidx.compose.runtime.Composer,int):37:37 -> MainScreen
     124:126:void MainScreen(u.Composer,int):0 -> MainScreen
@@ -103745,7 +103745,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     133:135:void MainScreen(androidx.compose.runtime.Composer,int):37:37 -> MainScreen
     133:135:void MainScreen(u.Composer,int):0 -> MainScreen
     136:139:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    136:139:void MainScreen(androidx.compose.runtime.Composer,int):210 -> MainScreen
+    136:139:void MainScreen(androidx.compose.runtime.Composer,int):211 -> MainScreen
     136:139:void MainScreen(u.Composer,int):0 -> MainScreen
     140:143:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> MainScreen
     140:143:void MainScreen(androidx.compose.runtime.Composer,int):39 -> MainScreen
@@ -103758,7 +103758,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     148:151:void MainScreen(androidx.compose.runtime.Composer,int):39 -> MainScreen
     148:151:void MainScreen(u.Composer,int):0 -> MainScreen
     152:154:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    152:154:void MainScreen(androidx.compose.runtime.Composer,int):213 -> MainScreen
+    152:154:void MainScreen(androidx.compose.runtime.Composer,int):214 -> MainScreen
     152:154:void MainScreen(u.Composer,int):0 -> MainScreen
     155:157:void MainScreen$lambda$4(androidx.compose.runtime.MutableState,int):39:39 -> MainScreen
     155:157:void MainScreen(androidx.compose.runtime.Composer,int):39 -> MainScreen
@@ -103771,7 +103771,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     164:166:void MainScreen(androidx.compose.runtime.Composer,int):39 -> MainScreen
     164:166:void MainScreen(u.Composer,int):0 -> MainScreen
     167:172:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    167:172:void MainScreen(androidx.compose.runtime.Composer,int):216 -> MainScreen
+    167:172:void MainScreen(androidx.compose.runtime.Composer,int):217 -> MainScreen
     167:172:void MainScreen(u.Composer,int):0 -> MainScreen
     173:211:void MainScreen$lambda$7(androidx.compose.runtime.MutableState,com.example.wearwifitools.wifi.WifiDiagnosticData):40:40 -> MainScreen
     173:211:void MainScreen(androidx.compose.runtime.Composer,int):40 -> MainScreen
@@ -103781,7 +103781,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     212:215:void MainScreen(androidx.compose.runtime.Composer,int):40 -> MainScreen
     212:215:void MainScreen(u.Composer,int):0 -> MainScreen
     216:218:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    216:218:void MainScreen(androidx.compose.runtime.Composer,int):219 -> MainScreen
+    216:218:void MainScreen(androidx.compose.runtime.Composer,int):220 -> MainScreen
     216:218:void MainScreen(u.Composer,int):0 -> MainScreen
     219:221:void MainScreen$lambda$7(androidx.compose.runtime.MutableState,com.example.wearwifitools.wifi.WifiDiagnosticData):40:40 -> MainScreen
     219:221:void MainScreen(androidx.compose.runtime.Composer,int):40 -> MainScreen
@@ -103794,7 +103794,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     228:230:void MainScreen(androidx.compose.runtime.Composer,int):40 -> MainScreen
     228:230:void MainScreen(u.Composer,int):0 -> MainScreen
     231:234:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    231:234:void MainScreen(androidx.compose.runtime.Composer,int):222 -> MainScreen
+    231:234:void MainScreen(androidx.compose.runtime.Composer,int):223 -> MainScreen
     231:234:void MainScreen(u.Composer,int):0 -> MainScreen
     235:238:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> MainScreen
     235:238:void MainScreen(androidx.compose.runtime.Composer,int):41 -> MainScreen
@@ -103804,7 +103804,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     239:242:void MainScreen(androidx.compose.runtime.Composer,int):41 -> MainScreen
     239:242:void MainScreen(u.Composer,int):0 -> MainScreen
     243:245:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    243:245:void MainScreen(androidx.compose.runtime.Composer,int):225 -> MainScreen
+    243:245:void MainScreen(androidx.compose.runtime.Composer,int):226 -> MainScreen
     243:245:void MainScreen(u.Composer,int):0 -> MainScreen
     246:248:void MainScreen$lambda$10(androidx.compose.runtime.MutableState,java.util.List):41:41 -> MainScreen
     246:248:void MainScreen(androidx.compose.runtime.Composer,int):41 -> MainScreen
@@ -103817,7 +103817,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     255:257:void MainScreen(androidx.compose.runtime.Composer,int):41 -> MainScreen
     255:257:void MainScreen(u.Composer,int):0 -> MainScreen
     258:263:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    258:263:void MainScreen(androidx.compose.runtime.Composer,int):228 -> MainScreen
+    258:263:void MainScreen(androidx.compose.runtime.Composer,int):229 -> MainScreen
     258:263:void MainScreen(u.Composer,int):0 -> MainScreen
     264:265:void MainScreen$lambda$13(androidx.compose.runtime.MutableState,boolean):42:42 -> MainScreen
     264:265:void MainScreen(androidx.compose.runtime.Composer,int):42 -> MainScreen
@@ -103827,7 +103827,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     266:269:void MainScreen(androidx.compose.runtime.Composer,int):42 -> MainScreen
     266:269:void MainScreen(u.Composer,int):0 -> MainScreen
     270:272:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    270:272:void MainScreen(androidx.compose.runtime.Composer,int):231 -> MainScreen
+    270:272:void MainScreen(androidx.compose.runtime.Composer,int):232 -> MainScreen
     270:272:void MainScreen(u.Composer,int):0 -> MainScreen
     273:275:void MainScreen$lambda$13(androidx.compose.runtime.MutableState,boolean):42:42 -> MainScreen
     273:275:void MainScreen(androidx.compose.runtime.Composer,int):42 -> MainScreen
@@ -103840,14 +103840,14 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     282:284:void MainScreen(androidx.compose.runtime.Composer,int):42 -> MainScreen
     282:284:void MainScreen(u.Composer,int):0 -> MainScreen
     285:290:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    285:290:void MainScreen(androidx.compose.runtime.Composer,int):234 -> MainScreen
+    285:290:void MainScreen(androidx.compose.runtime.Composer,int):235 -> MainScreen
     285:290:void MainScreen(u.Composer,int):0 -> MainScreen
     291:294:androidx.compose.runtime.MutableState androidx.compose.runtime.SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(java.lang.Object,androidx.compose.runtime.SnapshotMutationPolicy,int,java.lang.Object):58:58 -> MainScreen
     291:294:androidx.compose.runtime.MutableState androidx.compose.runtime.SnapshotStateKt.mutableStateOf$default(java.lang.Object,androidx.compose.runtime.SnapshotMutationPolicy,int,java.lang.Object):1 -> MainScreen
     291:294:void MainScreen(androidx.compose.runtime.Composer,int):43 -> MainScreen
     291:294:void MainScreen(u.Composer,int):0 -> MainScreen
     295:297:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    295:297:void MainScreen(androidx.compose.runtime.Composer,int):237 -> MainScreen
+    295:297:void MainScreen(androidx.compose.runtime.Composer,int):238 -> MainScreen
     295:297:void MainScreen(u.Composer,int):0 -> MainScreen
     298:300:void MainScreen$lambda$16(androidx.compose.runtime.MutableState,java.util.List):43:43 -> MainScreen
     298:300:void MainScreen(androidx.compose.runtime.Composer,int):43 -> MainScreen
@@ -103860,7 +103860,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     307:309:void MainScreen(androidx.compose.runtime.Composer,int):43 -> MainScreen
     307:309:void MainScreen(u.Composer,int):0 -> MainScreen
     310:315:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    310:315:void MainScreen(androidx.compose.runtime.Composer,int):240 -> MainScreen
+    310:315:void MainScreen(androidx.compose.runtime.Composer,int):241 -> MainScreen
     310:315:void MainScreen(u.Composer,int):0 -> MainScreen
     316:317:void MainScreen$lambda$19(androidx.compose.runtime.MutableState,boolean):44:44 -> MainScreen
     316:317:void MainScreen(androidx.compose.runtime.Composer,int):44 -> MainScreen
@@ -103870,7 +103870,7 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     318:321:void MainScreen(androidx.compose.runtime.Composer,int):44 -> MainScreen
     318:321:void MainScreen(u.Composer,int):0 -> MainScreen
     322:324:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    322:324:void MainScreen(androidx.compose.runtime.Composer,int):243 -> MainScreen
+    322:324:void MainScreen(androidx.compose.runtime.Composer,int):244 -> MainScreen
     322:324:void MainScreen(u.Composer,int):0 -> MainScreen
     325:327:void MainScreen$lambda$19(androidx.compose.runtime.MutableState,boolean):44:44 -> MainScreen
     325:327:void MainScreen(androidx.compose.runtime.Composer,int):44 -> MainScreen
@@ -103879,229 +103879,229 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     328:330:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
     328:330:void MainScreen(androidx.compose.runtime.Composer,int):44 -> MainScreen
     328:330:void MainScreen(u.Composer,int):0 -> MainScreen
-    331:341:void MainScreen(androidx.compose.runtime.Composer,int):62:62 -> MainScreen
-    331:341:void MainScreen(u.Composer,int):0 -> MainScreen
-    342:379:void MainScreen(androidx.compose.runtime.Composer,int):71:71 -> MainScreen
-    342:379:void MainScreen(u.Composer,int):0 -> MainScreen
-    380:383:void MainScreen(androidx.compose.runtime.Composer,int):79:79 -> MainScreen
-    380:383:void MainScreen(u.Composer,int):0 -> MainScreen
-    384:385:long androidx.compose.ui.graphics.Color.access$getBlack$cp():113:113 -> MainScreen
-    384:385:long androidx.compose.ui.graphics.Color$Companion.getBlack-0d7_KjU():281 -> MainScreen
-    384:385:void MainScreen(androidx.compose.runtime.Composer,int):80 -> MainScreen
-    384:385:void MainScreen(u.Composer,int):0 -> MainScreen
-    386:395:void MainScreen(androidx.compose.runtime.Composer,int):80:80 -> MainScreen
-    386:395:void MainScreen(u.Composer,int):0 -> MainScreen
-    396:401:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    396:401:void MainScreen(androidx.compose.runtime.Composer,int):246 -> MainScreen
-    396:401:void MainScreen(u.Composer,int):0 -> MainScreen
-    402:406:void MainScreen(androidx.compose.runtime.Composer,int):81:81 -> MainScreen
-    402:406:void MainScreen(u.Composer,int):0 -> MainScreen
-    407:409:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    407:409:void MainScreen(androidx.compose.runtime.Composer,int):249 -> MainScreen
-    407:409:void MainScreen(u.Composer,int):0 -> MainScreen
-    410:412:void MainScreen(androidx.compose.runtime.Composer,int):81:81 -> MainScreen
-    410:412:void MainScreen(u.Composer,int):0 -> MainScreen
-    413:415:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    413:415:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    413:415:void MainScreen(androidx.compose.runtime.Composer,int):81 -> MainScreen
-    413:415:void MainScreen(u.Composer,int):0 -> MainScreen
-    416:419:void MainScreen(androidx.compose.runtime.Composer,int):81:81 -> MainScreen
-    416:419:void MainScreen(u.Composer,int):0 -> MainScreen
-    420:423:void MainScreen(androidx.compose.runtime.Composer,int):89:89 -> MainScreen
-    420:423:void MainScreen(u.Composer,int):0 -> MainScreen
-    424:430:void MainScreen(androidx.compose.runtime.Composer,int):90:90 -> MainScreen
-    424:430:void MainScreen(u.Composer,int):0 -> MainScreen
-    431:433:void MainScreen(androidx.compose.runtime.Composer,int):77:77 -> MainScreen
-    431:433:void MainScreen(u.Composer,int):0 -> MainScreen
-    434:435:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):66:66 -> MainScreen
-    434:435:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    434:435:void MainScreen(u.Composer,int):0 -> MainScreen
-    436:442:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):70:70 -> MainScreen
-    436:442:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    436:442:void MainScreen(u.Composer,int):0 -> MainScreen
-    443:445:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):71:71 -> MainScreen
-    443:445:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    443:445:void MainScreen(u.Composer,int):0 -> MainScreen
-    446:447:int androidx.compose.runtime.ComposerImpl.getCompoundKeyHash():1522:1522 -> MainScreen
-    446:447:int androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(androidx.compose.runtime.Composer,int):225 -> MainScreen
-    446:447:void MainScreen(androidx.compose.runtime.Composer,int):258 -> MainScreen
-    446:447:void MainScreen(u.Composer,int):0 -> MainScreen
-    448:451:androidx.compose.runtime.CompositionLocalMap androidx.compose.runtime.ComposerImpl.getCurrentCompositionLocalMap():1931:1931 -> MainScreen
-    448:451:void MainScreen(androidx.compose.runtime.Composer,int):259 -> MainScreen
-    448:451:void MainScreen(u.Composer,int):0 -> MainScreen
-    452:456:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):81:81 -> MainScreen
-    452:456:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    452:456:void MainScreen(u.Composer,int):0 -> MainScreen
-    457:458:kotlin.jvm.functions.Function0 androidx.compose.ui.node.ComposeUiNode$Companion.getConstructor():45:45 -> MainScreen
-    457:458:void MainScreen(androidx.compose.runtime.Composer,int):261 -> MainScreen
-    457:458:void MainScreen(u.Composer,int):0 -> MainScreen
-    459:462:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):88:88 -> MainScreen
-    459:462:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    459:462:void MainScreen(u.Composer,int):0 -> MainScreen
-    463:468:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):456:456 -> MainScreen
-    463:468:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    463:468:void MainScreen(u.Composer,int):0 -> MainScreen
-    469:471:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):457:457 -> MainScreen
-    469:471:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    469:471:void MainScreen(u.Composer,int):0 -> MainScreen
-    472:475:boolean androidx.compose.runtime.ComposerImpl.getInserting():1502:1502 -> MainScreen
-    472:475:void MainScreen(androidx.compose.runtime.Composer,int):271 -> MainScreen
-    472:475:void MainScreen(u.Composer,int):0 -> MainScreen
-    476:479:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):459:459 -> MainScreen
-    476:479:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    476:479:void MainScreen(u.Composer,int):0 -> MainScreen
-    480:482:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):461:461 -> MainScreen
-    480:482:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    480:482:void MainScreen(u.Composer,int):0 -> MainScreen
-    483:484:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetMeasurePolicy():51:51 -> MainScreen
-    483:484:void MainScreen(androidx.compose.runtime.Composer,int):263 -> MainScreen
-    483:484:void MainScreen(u.Composer,int):0 -> MainScreen
-    485:487:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):83:83 -> MainScreen
-    485:487:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    485:487:void MainScreen(u.Composer,int):0 -> MainScreen
-    488:489:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetResolvedCompositionLocals():49:49 -> MainScreen
-    488:489:void MainScreen(androidx.compose.runtime.Composer,int):264 -> MainScreen
-    488:489:void MainScreen(u.Composer,int):0 -> MainScreen
-    490:492:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):84:84 -> MainScreen
-    490:492:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    490:492:void MainScreen(u.Composer,int):0 -> MainScreen
-    493:494:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetCompositeKeyHash():60:60 -> MainScreen
-    493:494:void MainScreen(androidx.compose.runtime.Composer,int):266 -> MainScreen
-    493:494:void MainScreen(u.Composer,int):0 -> MainScreen
-    495:498:boolean androidx.compose.runtime.ComposerImpl.getInserting():1502:1502 -> MainScreen
-    495:498:void MainScreen(androidx.compose.runtime.Composer,int):278 -> MainScreen
-    495:498:void MainScreen(u.Composer,int):0 -> MainScreen
-    499:502:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    499:502:void MainScreen(androidx.compose.runtime.Composer,int):278 -> MainScreen
-    499:502:void MainScreen(u.Composer,int):0 -> MainScreen
-    503:512:void androidx.compose.runtime.Updater.set-impl(androidx.compose.runtime.Composer,int,kotlin.jvm.functions.Function2):4145:4145 -> MainScreen
-    503:512:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    503:512:void MainScreen(u.Composer,int):0 -> MainScreen
-    513:515:void MainScreen(androidx.compose.runtime.Composer,int):0:0 -> MainScreen
-    513:515:void MainScreen(u.Composer,int):0 -> MainScreen
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":826,"4":828,"7":831,"11":835},"outline":"LA/c;j(ILu/B;ILW/j;)V"}
-    516:524:androidx.compose.runtime.SkippableUpdater androidx.compose.runtime.SkippableUpdater.box-impl(androidx.compose.runtime.Composer):0:0 -> MainScreen
-    516:524:void MainScreen(androidx.compose.runtime.Composer,int):283 -> MainScreen
-    516:524:void MainScreen(u.Composer,int):0 -> MainScreen
-    525:527:void MainScreen(androidx.compose.runtime.Composer,int):0:0 -> MainScreen
-    525:527:void MainScreen(u.Composer,int):0 -> MainScreen
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":836,"4":838,"7":841},"outline":"LA/c;h(ILB/c;Lu/Q0;Lu/B;I)V"}
-    528:529:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):72:72 -> MainScreen
-    528:529:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    528:529:void MainScreen(u.Composer,int):0 -> MainScreen
-    530:552:void MainScreen(androidx.compose.runtime.Composer,int):93:93 -> MainScreen
-    530:552:void MainScreen(u.Composer,int):0 -> MainScreen
-    553:556:void MainScreen(androidx.compose.runtime.Composer,int):116:116 -> MainScreen
-    553:556:void MainScreen(u.Composer,int):0 -> MainScreen
-    557:565:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    557:565:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    557:565:void MainScreen(androidx.compose.runtime.Composer,int):116 -> MainScreen
-    557:565:void MainScreen(u.Composer,int):0 -> MainScreen
-    566:568:void MainScreen(androidx.compose.runtime.Composer,int):102:102 -> MainScreen
-    566:568:void MainScreen(u.Composer,int):0 -> MainScreen
-    569:572:void MainScreen(androidx.compose.runtime.Composer,int):103:103 -> MainScreen
-    569:572:void MainScreen(u.Composer,int):0 -> MainScreen
-    573:576:void MainScreen(androidx.compose.runtime.Composer,int):104:104 -> MainScreen
-    573:576:void MainScreen(u.Composer,int):0 -> MainScreen
-    577:588:void MainScreen(androidx.compose.runtime.Composer,int):102:102 -> MainScreen
-    577:588:void MainScreen(u.Composer,int):0 -> MainScreen
-    589:596:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    589:596:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    589:596:void MainScreen(androidx.compose.runtime.Composer,int):102 -> MainScreen
-    589:596:void MainScreen(u.Composer,int):0 -> MainScreen
-    597:611:void MainScreen(androidx.compose.runtime.Composer,int):101:101 -> MainScreen
-    597:611:void MainScreen(u.Composer,int):0 -> MainScreen
-    612:619:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    612:619:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    612:619:void MainScreen(androidx.compose.runtime.Composer,int):101 -> MainScreen
-    612:619:void MainScreen(u.Composer,int):0 -> MainScreen
-    620:622:void MainScreen(androidx.compose.runtime.Composer,int):96:96 -> MainScreen
-    620:622:void MainScreen(u.Composer,int):0 -> MainScreen
-    623:626:void MainScreen(androidx.compose.runtime.Composer,int):97:97 -> MainScreen
-    623:626:void MainScreen(u.Composer,int):0 -> MainScreen
-    627:630:void MainScreen(androidx.compose.runtime.Composer,int):98:98 -> MainScreen
-    627:630:void MainScreen(u.Composer,int):0 -> MainScreen
-    631:642:void MainScreen(androidx.compose.runtime.Composer,int):96:96 -> MainScreen
-    631:642:void MainScreen(u.Composer,int):0 -> MainScreen
-    643:650:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    643:650:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    643:650:void MainScreen(androidx.compose.runtime.Composer,int):96 -> MainScreen
-    643:650:void MainScreen(u.Composer,int):0 -> MainScreen
-    651:660:void MainScreen(androidx.compose.runtime.Composer,int):95:95 -> MainScreen
-    651:660:void MainScreen(u.Composer,int):0 -> MainScreen
-    661:668:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    661:668:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    661:668:void MainScreen(androidx.compose.runtime.Composer,int):95 -> MainScreen
-    661:668:void MainScreen(u.Composer,int):0 -> MainScreen
-    669:683:void MainScreen(androidx.compose.runtime.Composer,int):94:94 -> MainScreen
-    669:683:void MainScreen(u.Composer,int):0 -> MainScreen
-    684:686:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    684:686:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    684:686:void MainScreen(androidx.compose.runtime.Composer,int):94 -> MainScreen
-    684:686:void MainScreen(u.Composer,int):0 -> MainScreen
-    687:693:void MainScreen(androidx.compose.runtime.Composer,int):121:121 -> MainScreen
-    687:693:void MainScreen(u.Composer,int):0 -> MainScreen
-    694:696:void MainScreen(androidx.compose.runtime.Composer,int):120:120 -> MainScreen
-    694:696:void MainScreen(u.Composer,int):0 -> MainScreen
-    697:702:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
-    697:702:void MainScreen(androidx.compose.runtime.Composer,int):287 -> MainScreen
-    697:702:void MainScreen(u.Composer,int):0 -> MainScreen
-    703:707:void MainScreen(androidx.compose.runtime.Composer,int):122:122 -> MainScreen
-    703:707:void MainScreen(u.Composer,int):0 -> MainScreen
-    708:710:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    708:710:void MainScreen(androidx.compose.runtime.Composer,int):290 -> MainScreen
-    708:710:void MainScreen(u.Composer,int):0 -> MainScreen
-    711:714:void MainScreen(androidx.compose.runtime.Composer,int):122:122 -> MainScreen
-    711:714:void MainScreen(u.Composer,int):0 -> MainScreen
-    715:727:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    715:727:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    715:727:void MainScreen(androidx.compose.runtime.Composer,int):122 -> MainScreen
-    715:727:void MainScreen(u.Composer,int):0 -> MainScreen
-    728:730:void MainScreen(androidx.compose.runtime.Composer,int):119:119 -> MainScreen
-    728:730:void MainScreen(u.Composer,int):0 -> MainScreen
-    731:733:long androidx.compose.ui.graphics.Color.access$getDarkGray$cp():113:113 -> MainScreen
-    731:733:long androidx.compose.ui.graphics.Color$Companion.getDarkGray-0d7_KjU():284 -> MainScreen
-    731:733:void MainScreen(androidx.compose.runtime.Composer,int):155 -> MainScreen
-    731:733:void MainScreen(u.Composer,int):0 -> MainScreen
-    734:737:void MainScreen(androidx.compose.runtime.Composer,int):156:156 -> MainScreen
-    734:737:void MainScreen(u.Composer,int):0 -> MainScreen
-    738:752:void MainScreen(androidx.compose.runtime.Composer,int):158:158 -> MainScreen
-    738:752:void MainScreen(u.Composer,int):0 -> MainScreen
-    753:760:void MainScreen(androidx.compose.runtime.Composer,int):159:159 -> MainScreen
-    753:760:void MainScreen(u.Composer,int):0 -> MainScreen
-    761:804:void MainScreen(androidx.compose.runtime.Composer,int):153:153 -> MainScreen
-    761:804:void MainScreen(u.Composer,int):0 -> MainScreen
-    805:807:void MainScreen(androidx.compose.runtime.Composer,int):0:0 -> MainScreen
-    805:807:void MainScreen(u.Composer,int):0 -> MainScreen
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":842,"3":844,"6":847,"9":851},"outline":"LA/c;q(Lu/B;ZZZZ)V"}
-    808:818:void MainScreen(androidx.compose.runtime.Composer,int):162:162 -> MainScreen
-    808:818:void MainScreen(u.Composer,int):0 -> MainScreen
-    819:821:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1099:1099 -> MainScreen
-    819:821:void androidx.compose.runtime.RecomposeScopeImpl.updateScope(kotlin.jvm.functions.Function2):39 -> MainScreen
-    819:821:void MainScreen(androidx.compose.runtime.Composer,int):162 -> MainScreen
-    819:821:void MainScreen(u.Composer,int):0 -> MainScreen
-    822:825:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):456:456 -> MainScreen
-    822:825:void MainScreen(androidx.compose.runtime.Composer,int):77 -> MainScreen
-    822:825:void MainScreen(u.Composer,int):0 -> MainScreen
-    826:826:void MainScreen(androidx.compose.runtime.Composer,int):279:279 -> MainScreen
-    828:828:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
-    828:828:void MainScreen(androidx.compose.runtime.Composer,int):279 -> MainScreen
-    831:831:void MainScreen(androidx.compose.runtime.Composer,int):280:280 -> MainScreen
-    835:835:void MainScreen(androidx.compose.runtime.Composer,int):280:280 -> MainScreen
-    836:836:void MainScreen(androidx.compose.runtime.Composer,int):283:283 -> MainScreen
-    838:838:void MainScreen(androidx.compose.runtime.Composer,int):283:283 -> MainScreen
-    841:841:void MainScreen(androidx.compose.runtime.Composer,int):284:284 -> MainScreen
-    842:842:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    842:842:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    842:842:void MainScreen(androidx.compose.runtime.Composer,int):294 -> MainScreen
-    844:844:void androidx.compose.runtime.ComposerImpl.endNode():1645:1645 -> MainScreen
-    844:844:void MainScreen(androidx.compose.runtime.Composer,int):295 -> MainScreen
-    847:847:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    847:847:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    847:847:void MainScreen(androidx.compose.runtime.Composer,int):296 -> MainScreen
-    851:851:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
-    851:851:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
-    851:851:void MainScreen(androidx.compose.runtime.Composer,int):297 -> MainScreen
+    331:366:void MainScreen(androidx.compose.runtime.Composer,int):62:62 -> MainScreen
+    331:366:void MainScreen(u.Composer,int):0 -> MainScreen
+    367:394:void MainScreen(androidx.compose.runtime.Composer,int):72:72 -> MainScreen
+    367:394:void MainScreen(u.Composer,int):0 -> MainScreen
+    395:398:void MainScreen(androidx.compose.runtime.Composer,int):80:80 -> MainScreen
+    395:398:void MainScreen(u.Composer,int):0 -> MainScreen
+    399:400:long androidx.compose.ui.graphics.Color.access$getBlack$cp():113:113 -> MainScreen
+    399:400:long androidx.compose.ui.graphics.Color$Companion.getBlack-0d7_KjU():281 -> MainScreen
+    399:400:void MainScreen(androidx.compose.runtime.Composer,int):81 -> MainScreen
+    399:400:void MainScreen(u.Composer,int):0 -> MainScreen
+    401:410:void MainScreen(androidx.compose.runtime.Composer,int):81:81 -> MainScreen
+    401:410:void MainScreen(u.Composer,int):0 -> MainScreen
+    411:416:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
+    411:416:void MainScreen(androidx.compose.runtime.Composer,int):247 -> MainScreen
+    411:416:void MainScreen(u.Composer,int):0 -> MainScreen
+    417:421:void MainScreen(androidx.compose.runtime.Composer,int):82:82 -> MainScreen
+    417:421:void MainScreen(u.Composer,int):0 -> MainScreen
+    422:424:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
+    422:424:void MainScreen(androidx.compose.runtime.Composer,int):250 -> MainScreen
+    422:424:void MainScreen(u.Composer,int):0 -> MainScreen
+    425:427:void MainScreen(androidx.compose.runtime.Composer,int):82:82 -> MainScreen
+    425:427:void MainScreen(u.Composer,int):0 -> MainScreen
+    428:430:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    428:430:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    428:430:void MainScreen(androidx.compose.runtime.Composer,int):82 -> MainScreen
+    428:430:void MainScreen(u.Composer,int):0 -> MainScreen
+    431:434:void MainScreen(androidx.compose.runtime.Composer,int):82:82 -> MainScreen
+    431:434:void MainScreen(u.Composer,int):0 -> MainScreen
+    435:438:void MainScreen(androidx.compose.runtime.Composer,int):90:90 -> MainScreen
+    435:438:void MainScreen(u.Composer,int):0 -> MainScreen
+    439:445:void MainScreen(androidx.compose.runtime.Composer,int):91:91 -> MainScreen
+    439:445:void MainScreen(u.Composer,int):0 -> MainScreen
+    446:448:void MainScreen(androidx.compose.runtime.Composer,int):78:78 -> MainScreen
+    446:448:void MainScreen(u.Composer,int):0 -> MainScreen
+    449:450:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):66:66 -> MainScreen
+    449:450:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    449:450:void MainScreen(u.Composer,int):0 -> MainScreen
+    451:457:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):70:70 -> MainScreen
+    451:457:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    451:457:void MainScreen(u.Composer,int):0 -> MainScreen
+    458:460:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):71:71 -> MainScreen
+    458:460:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    458:460:void MainScreen(u.Composer,int):0 -> MainScreen
+    461:462:int androidx.compose.runtime.ComposerImpl.getCompoundKeyHash():1522:1522 -> MainScreen
+    461:462:int androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(androidx.compose.runtime.Composer,int):225 -> MainScreen
+    461:462:void MainScreen(androidx.compose.runtime.Composer,int):259 -> MainScreen
+    461:462:void MainScreen(u.Composer,int):0 -> MainScreen
+    463:466:androidx.compose.runtime.CompositionLocalMap androidx.compose.runtime.ComposerImpl.getCurrentCompositionLocalMap():1931:1931 -> MainScreen
+    463:466:void MainScreen(androidx.compose.runtime.Composer,int):260 -> MainScreen
+    463:466:void MainScreen(u.Composer,int):0 -> MainScreen
+    467:471:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):81:81 -> MainScreen
+    467:471:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    467:471:void MainScreen(u.Composer,int):0 -> MainScreen
+    472:473:kotlin.jvm.functions.Function0 androidx.compose.ui.node.ComposeUiNode$Companion.getConstructor():45:45 -> MainScreen
+    472:473:void MainScreen(androidx.compose.runtime.Composer,int):262 -> MainScreen
+    472:473:void MainScreen(u.Composer,int):0 -> MainScreen
+    474:477:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):88:88 -> MainScreen
+    474:477:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    474:477:void MainScreen(u.Composer,int):0 -> MainScreen
+    478:483:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):456:456 -> MainScreen
+    478:483:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    478:483:void MainScreen(u.Composer,int):0 -> MainScreen
+    484:486:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):457:457 -> MainScreen
+    484:486:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    484:486:void MainScreen(u.Composer,int):0 -> MainScreen
+    487:490:boolean androidx.compose.runtime.ComposerImpl.getInserting():1502:1502 -> MainScreen
+    487:490:void MainScreen(androidx.compose.runtime.Composer,int):272 -> MainScreen
+    487:490:void MainScreen(u.Composer,int):0 -> MainScreen
+    491:494:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):459:459 -> MainScreen
+    491:494:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    491:494:void MainScreen(u.Composer,int):0 -> MainScreen
+    495:497:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):461:461 -> MainScreen
+    495:497:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    495:497:void MainScreen(u.Composer,int):0 -> MainScreen
+    498:499:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetMeasurePolicy():51:51 -> MainScreen
+    498:499:void MainScreen(androidx.compose.runtime.Composer,int):264 -> MainScreen
+    498:499:void MainScreen(u.Composer,int):0 -> MainScreen
+    500:502:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):83:83 -> MainScreen
+    500:502:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    500:502:void MainScreen(u.Composer,int):0 -> MainScreen
+    503:504:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetResolvedCompositionLocals():49:49 -> MainScreen
+    503:504:void MainScreen(androidx.compose.runtime.Composer,int):265 -> MainScreen
+    503:504:void MainScreen(u.Composer,int):0 -> MainScreen
+    505:507:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):84:84 -> MainScreen
+    505:507:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    505:507:void MainScreen(u.Composer,int):0 -> MainScreen
+    508:509:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetCompositeKeyHash():60:60 -> MainScreen
+    508:509:void MainScreen(androidx.compose.runtime.Composer,int):267 -> MainScreen
+    508:509:void MainScreen(u.Composer,int):0 -> MainScreen
+    510:513:boolean androidx.compose.runtime.ComposerImpl.getInserting():1502:1502 -> MainScreen
+    510:513:void MainScreen(androidx.compose.runtime.Composer,int):279 -> MainScreen
+    510:513:void MainScreen(u.Composer,int):0 -> MainScreen
+    514:517:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
+    514:517:void MainScreen(androidx.compose.runtime.Composer,int):279 -> MainScreen
+    514:517:void MainScreen(u.Composer,int):0 -> MainScreen
+    518:527:void androidx.compose.runtime.Updater.set-impl(androidx.compose.runtime.Composer,int,kotlin.jvm.functions.Function2):4145:4145 -> MainScreen
+    518:527:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    518:527:void MainScreen(u.Composer,int):0 -> MainScreen
+    528:530:void MainScreen(androidx.compose.runtime.Composer,int):0:0 -> MainScreen
+    528:530:void MainScreen(u.Composer,int):0 -> MainScreen
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":839,"4":841,"7":844,"11":848},"outline":"LA/c;j(ILu/B;ILW/j;)V"}
+    531:539:androidx.compose.runtime.SkippableUpdater androidx.compose.runtime.SkippableUpdater.box-impl(androidx.compose.runtime.Composer):0:0 -> MainScreen
+    531:539:void MainScreen(androidx.compose.runtime.Composer,int):284 -> MainScreen
+    531:539:void MainScreen(u.Composer,int):0 -> MainScreen
+    540:542:void MainScreen(androidx.compose.runtime.Composer,int):0:0 -> MainScreen
+    540:542:void MainScreen(u.Composer,int):0 -> MainScreen
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":849,"4":851,"7":854},"outline":"LA/c;h(ILB/c;Lu/Q0;Lu/B;I)V"}
+    543:544:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):72:72 -> MainScreen
+    543:544:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    543:544:void MainScreen(u.Composer,int):0 -> MainScreen
+    545:567:void MainScreen(androidx.compose.runtime.Composer,int):94:94 -> MainScreen
+    545:567:void MainScreen(u.Composer,int):0 -> MainScreen
+    568:571:void MainScreen(androidx.compose.runtime.Composer,int):117:117 -> MainScreen
+    568:571:void MainScreen(u.Composer,int):0 -> MainScreen
+    572:580:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    572:580:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    572:580:void MainScreen(androidx.compose.runtime.Composer,int):117 -> MainScreen
+    572:580:void MainScreen(u.Composer,int):0 -> MainScreen
+    581:583:void MainScreen(androidx.compose.runtime.Composer,int):103:103 -> MainScreen
+    581:583:void MainScreen(u.Composer,int):0 -> MainScreen
+    584:587:void MainScreen(androidx.compose.runtime.Composer,int):104:104 -> MainScreen
+    584:587:void MainScreen(u.Composer,int):0 -> MainScreen
+    588:591:void MainScreen(androidx.compose.runtime.Composer,int):105:105 -> MainScreen
+    588:591:void MainScreen(u.Composer,int):0 -> MainScreen
+    592:603:void MainScreen(androidx.compose.runtime.Composer,int):103:103 -> MainScreen
+    592:603:void MainScreen(u.Composer,int):0 -> MainScreen
+    604:611:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    604:611:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    604:611:void MainScreen(androidx.compose.runtime.Composer,int):103 -> MainScreen
+    604:611:void MainScreen(u.Composer,int):0 -> MainScreen
+    612:626:void MainScreen(androidx.compose.runtime.Composer,int):102:102 -> MainScreen
+    612:626:void MainScreen(u.Composer,int):0 -> MainScreen
+    627:634:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    627:634:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    627:634:void MainScreen(androidx.compose.runtime.Composer,int):102 -> MainScreen
+    627:634:void MainScreen(u.Composer,int):0 -> MainScreen
+    635:637:void MainScreen(androidx.compose.runtime.Composer,int):97:97 -> MainScreen
+    635:637:void MainScreen(u.Composer,int):0 -> MainScreen
+    638:641:void MainScreen(androidx.compose.runtime.Composer,int):98:98 -> MainScreen
+    638:641:void MainScreen(u.Composer,int):0 -> MainScreen
+    642:645:void MainScreen(androidx.compose.runtime.Composer,int):99:99 -> MainScreen
+    642:645:void MainScreen(u.Composer,int):0 -> MainScreen
+    646:657:void MainScreen(androidx.compose.runtime.Composer,int):97:97 -> MainScreen
+    646:657:void MainScreen(u.Composer,int):0 -> MainScreen
+    658:665:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    658:665:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    658:665:void MainScreen(androidx.compose.runtime.Composer,int):97 -> MainScreen
+    658:665:void MainScreen(u.Composer,int):0 -> MainScreen
+    666:675:void MainScreen(androidx.compose.runtime.Composer,int):96:96 -> MainScreen
+    666:675:void MainScreen(u.Composer,int):0 -> MainScreen
+    676:683:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    676:683:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    676:683:void MainScreen(androidx.compose.runtime.Composer,int):96 -> MainScreen
+    676:683:void MainScreen(u.Composer,int):0 -> MainScreen
+    684:698:void MainScreen(androidx.compose.runtime.Composer,int):95:95 -> MainScreen
+    684:698:void MainScreen(u.Composer,int):0 -> MainScreen
+    699:701:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    699:701:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    699:701:void MainScreen(androidx.compose.runtime.Composer,int):95 -> MainScreen
+    699:701:void MainScreen(u.Composer,int):0 -> MainScreen
+    702:708:void MainScreen(androidx.compose.runtime.Composer,int):122:122 -> MainScreen
+    702:708:void MainScreen(u.Composer,int):0 -> MainScreen
+    709:711:void MainScreen(androidx.compose.runtime.Composer,int):121:121 -> MainScreen
+    709:711:void MainScreen(u.Composer,int):0 -> MainScreen
+    712:717:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> MainScreen
+    712:717:void MainScreen(androidx.compose.runtime.Composer,int):288 -> MainScreen
+    712:717:void MainScreen(u.Composer,int):0 -> MainScreen
+    718:722:void MainScreen(androidx.compose.runtime.Composer,int):123:123 -> MainScreen
+    718:722:void MainScreen(u.Composer,int):0 -> MainScreen
+    723:725:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
+    723:725:void MainScreen(androidx.compose.runtime.Composer,int):291 -> MainScreen
+    723:725:void MainScreen(u.Composer,int):0 -> MainScreen
+    726:729:void MainScreen(androidx.compose.runtime.Composer,int):123:123 -> MainScreen
+    726:729:void MainScreen(u.Composer,int):0 -> MainScreen
+    730:742:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    730:742:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    730:742:void MainScreen(androidx.compose.runtime.Composer,int):123 -> MainScreen
+    730:742:void MainScreen(u.Composer,int):0 -> MainScreen
+    743:745:void MainScreen(androidx.compose.runtime.Composer,int):120:120 -> MainScreen
+    743:745:void MainScreen(u.Composer,int):0 -> MainScreen
+    746:748:long androidx.compose.ui.graphics.Color.access$getDarkGray$cp():113:113 -> MainScreen
+    746:748:long androidx.compose.ui.graphics.Color$Companion.getDarkGray-0d7_KjU():284 -> MainScreen
+    746:748:void MainScreen(androidx.compose.runtime.Composer,int):156 -> MainScreen
+    746:748:void MainScreen(u.Composer,int):0 -> MainScreen
+    749:752:void MainScreen(androidx.compose.runtime.Composer,int):157:157 -> MainScreen
+    749:752:void MainScreen(u.Composer,int):0 -> MainScreen
+    753:767:void MainScreen(androidx.compose.runtime.Composer,int):159:159 -> MainScreen
+    753:767:void MainScreen(u.Composer,int):0 -> MainScreen
+    768:775:void MainScreen(androidx.compose.runtime.Composer,int):160:160 -> MainScreen
+    768:775:void MainScreen(u.Composer,int):0 -> MainScreen
+    776:814:void MainScreen(androidx.compose.runtime.Composer,int):154:154 -> MainScreen
+    776:814:void MainScreen(u.Composer,int):0 -> MainScreen
+    815:817:void MainScreen(androidx.compose.runtime.Composer,int):0:0 -> MainScreen
+    815:817:void MainScreen(u.Composer,int):0 -> MainScreen
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":855,"3":857,"6":860,"9":864},"outline":"LA/c;q(Lu/B;ZZZZ)V"}
+    818:830:void MainScreen(androidx.compose.runtime.Composer,int):163:163 -> MainScreen
+    818:830:void MainScreen(u.Composer,int):0 -> MainScreen
+    831:833:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> MainScreen
+    831:833:void androidx.compose.runtime.RecomposeScopeImpl.updateScope(kotlin.jvm.functions.Function2):39 -> MainScreen
+    831:833:void MainScreen(androidx.compose.runtime.Composer,int):163 -> MainScreen
+    831:833:void MainScreen(u.Composer,int):0 -> MainScreen
+    834:838:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):456:456 -> MainScreen
+    834:838:void MainScreen(androidx.compose.runtime.Composer,int):78 -> MainScreen
+    834:838:void MainScreen(u.Composer,int):0 -> MainScreen
+    839:839:void MainScreen(androidx.compose.runtime.Composer,int):280:280 -> MainScreen
+    841:841:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> MainScreen
+    841:841:void MainScreen(androidx.compose.runtime.Composer,int):280 -> MainScreen
+    844:844:void MainScreen(androidx.compose.runtime.Composer,int):281:281 -> MainScreen
+    848:848:void MainScreen(androidx.compose.runtime.Composer,int):281:281 -> MainScreen
+    849:849:void MainScreen(androidx.compose.runtime.Composer,int):284:284 -> MainScreen
+    851:851:void MainScreen(androidx.compose.runtime.Composer,int):284:284 -> MainScreen
+    854:854:void MainScreen(androidx.compose.runtime.Composer,int):285:285 -> MainScreen
+    855:855:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    855:855:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    855:855:void MainScreen(androidx.compose.runtime.Composer,int):295 -> MainScreen
+    857:857:void androidx.compose.runtime.ComposerImpl.endNode():1645:1645 -> MainScreen
+    857:857:void MainScreen(androidx.compose.runtime.Composer,int):296 -> MainScreen
+    860:860:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    860:860:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    860:860:void MainScreen(androidx.compose.runtime.Composer,int):297 -> MainScreen
+    864:864:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> MainScreen
+    864:864:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> MainScreen
+    864:864:void MainScreen(androidx.compose.runtime.Composer,int):298 -> MainScreen
     0:3:void androidx.compose.runtime.SnapshotStateKt__SnapshotStateKt.setValue(androidx.compose.runtime.MutableState,java.lang.Object,kotlin.reflect.KProperty,java.lang.Object):107:107 -> MainScreen$lambda$10
     0:3:void MainScreen$lambda$10(androidx.compose.runtime.MutableState,java.util.List):41 -> MainScreen$lambda$10
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;Ljava/util/List;)V"}
@@ -104151,165 +104151,165 @@ com.example.wearwifitools.ui.MainScreenKt -> com.example.wearwifitools.ui.MainSc
     0:17:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
       # {"id":"com.android.tools.r8.synthesized"}
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;ZLj1/a;Lu/k;I)V"}
-    18:91:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):165:165 -> TabPill
+    18:91:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166:166 -> TabPill
     18:91:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    92:97:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):180:180 -> TabPill
+    92:97:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):181:181 -> TabPill
     92:97:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    98:102:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167:167 -> TabPill
+    98:102:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):168:168 -> TabPill
     98:102:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    103:117:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):168:168 -> TabPill
+    103:117:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):169:169 -> TabPill
     103:117:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    118:135:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):169:169 -> TabPill
+    118:135:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170:170 -> TabPill
     118:135:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    136:147:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170:170 -> TabPill
+    136:147:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171:171 -> TabPill
     136:147:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     148:153:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> TabPill
-    148:153:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):300 -> TabPill
+    148:153:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):301 -> TabPill
     148:153:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     154:157:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> TabPill
-    154:157:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170 -> TabPill
+    154:157:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171 -> TabPill
     154:157:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    158:162:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170:170 -> TabPill
+    158:162:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171:171 -> TabPill
     158:162:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     163:165:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> TabPill
-    163:165:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):303 -> TabPill
+    163:165:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):304 -> TabPill
     163:165:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    166:167:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170:170 -> TabPill
+    166:167:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171:171 -> TabPill
     166:167:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     168:171:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> TabPill
     168:171:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> TabPill
-    168:171:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170 -> TabPill
+    168:171:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171 -> TabPill
     168:171:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    172:177:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):170:170 -> TabPill
+    172:177:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171:171 -> TabPill
     172:177:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    178:184:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):171:171 -> TabPill
+    178:184:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):172:172 -> TabPill
     178:184:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    185:187:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166:166 -> TabPill
+    185:187:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167:167 -> TabPill
     185:187:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     188:189:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):66:66 -> TabPill
-    188:189:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    188:189:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     188:189:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     190:196:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):70:70 -> TabPill
-    190:196:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    190:196:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     190:196:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     197:199:void androidx.compose.foundation.layout.BoxKt.Box(androidx.compose.ui.Modifier,androidx.compose.ui.Alignment,boolean,kotlin.jvm.functions.Function3,androidx.compose.runtime.Composer,int,int):71:71 -> TabPill
-    197:199:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    197:199:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     197:199:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     200:201:int androidx.compose.runtime.ComposerImpl.getCompoundKeyHash():1522:1522 -> TabPill
     200:201:int androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(androidx.compose.runtime.Composer,int):225 -> TabPill
-    200:201:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):313 -> TabPill
+    200:201:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):314 -> TabPill
     200:201:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     202:205:androidx.compose.runtime.CompositionLocalMap androidx.compose.runtime.ComposerImpl.getCurrentCompositionLocalMap():1931:1931 -> TabPill
-    202:205:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):314 -> TabPill
+    202:205:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):315 -> TabPill
     202:205:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     206:210:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):81:81 -> TabPill
-    206:210:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    206:210:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     206:210:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     211:212:kotlin.jvm.functions.Function0 androidx.compose.ui.node.ComposeUiNode$Companion.getConstructor():45:45 -> TabPill
-    211:212:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):316 -> TabPill
+    211:212:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):317 -> TabPill
     211:212:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     213:216:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):88:88 -> TabPill
-    213:216:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    213:216:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     213:216:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     217:222:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):456:456 -> TabPill
-    217:222:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    217:222:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     217:222:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     223:225:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):457:457 -> TabPill
-    223:225:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    223:225:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     223:225:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     226:229:boolean androidx.compose.runtime.ComposerImpl.getInserting():1502:1502 -> TabPill
-    226:229:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):326 -> TabPill
+    226:229:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):327 -> TabPill
     226:229:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     230:233:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):459:459 -> TabPill
-    230:233:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    230:233:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     230:233:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     234:236:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):461:461 -> TabPill
-    234:236:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    234:236:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     234:236:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     237:238:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetMeasurePolicy():51:51 -> TabPill
-    237:238:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):318 -> TabPill
+    237:238:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):319 -> TabPill
     237:238:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     239:241:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):83:83 -> TabPill
-    239:241:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    239:241:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     239:241:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     242:243:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetResolvedCompositionLocals():49:49 -> TabPill
-    242:243:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):319 -> TabPill
+    242:243:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):320 -> TabPill
     242:243:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     244:246:void androidx.compose.ui.layout.LayoutKt.Layout(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,androidx.compose.ui.layout.MeasurePolicy,androidx.compose.runtime.Composer,int,int):84:84 -> TabPill
-    244:246:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    244:246:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     244:246:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     247:248:kotlin.jvm.functions.Function2 androidx.compose.ui.node.ComposeUiNode$Companion.getSetCompositeKeyHash():60:60 -> TabPill
-    247:248:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):321 -> TabPill
+    247:248:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):322 -> TabPill
     247:248:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     249:252:boolean androidx.compose.runtime.ComposerImpl.getInserting():1502:1502 -> TabPill
-    249:252:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):333 -> TabPill
+    249:252:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):334 -> TabPill
     249:252:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     253:256:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> TabPill
-    253:256:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):333 -> TabPill
+    253:256:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):334 -> TabPill
     253:256:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     257:266:void androidx.compose.runtime.Updater.set-impl(androidx.compose.runtime.Composer,int,kotlin.jvm.functions.Function2):4145:4145 -> TabPill
-    257:266:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    257:266:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     257:266:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     267:269:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):0:0 -> TabPill
     267:269:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":391,"4":393,"7":396,"11":400},"outline":"LA/c;j(ILu/B;ILW/j;)V"}
     270:277:androidx.compose.runtime.SkippableUpdater androidx.compose.runtime.SkippableUpdater.box-impl(androidx.compose.runtime.Composer):0:0 -> TabPill
-    270:277:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):338 -> TabPill
+    270:277:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):339 -> TabPill
     270:277:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     278:282:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):0:0 -> TabPill
     278:282:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":401,"4":403,"7":406},"outline":"LA/c;h(ILB/c;Lu/Q0;Lu/B;I)V"}
     283:287:long androidx.compose.ui.graphics.Color.access$getWhite$cp():113:113 -> TabPill
     283:287:long androidx.compose.ui.graphics.Color$Companion.getWhite-0d7_KjU():293 -> TabPill
-    283:287:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):175 -> TabPill
+    283:287:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):176 -> TabPill
     283:287:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     288:292:long androidx.compose.ui.graphics.Color.access$getGray$cp():113:113 -> TabPill
     288:292:long androidx.compose.ui.graphics.Color$Companion.getGray-0d7_KjU():287 -> TabPill
-    288:292:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):175 -> TabPill
+    288:292:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):176 -> TabPill
     288:292:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    293:298:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):176:176 -> TabPill
+    293:298:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):177:177 -> TabPill
     293:298:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     299:303:androidx.compose.ui.text.font.FontWeight androidx.compose.ui.text.font.FontWeight.access$getBold$cp():30:30 -> TabPill
     299:303:androidx.compose.ui.text.font.FontWeight androidx.compose.ui.text.font.FontWeight$Companion.getBold():84 -> TabPill
-    299:303:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):177 -> TabPill
+    299:303:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):178 -> TabPill
     299:303:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     304:353:androidx.compose.ui.text.font.FontWeight androidx.compose.ui.text.font.FontWeight.access$getNormal$cp():30:30 -> TabPill
     304:353:androidx.compose.ui.text.font.FontWeight androidx.compose.ui.text.font.FontWeight$Companion.getNormal():73 -> TabPill
-    304:353:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):177 -> TabPill
+    304:353:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):178 -> TabPill
     304:353:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    354:360:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):173:173 -> TabPill
+    354:360:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):174:174 -> TabPill
     354:360:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     361:363:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):0:0 -> TabPill
     361:363:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"0":407,"3":409,"6":412,"9":416},"outline":"LA/c;q(Lu/B;ZZZZ)V"}
-    364:382:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):180:180 -> TabPill
+    364:382:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):181:181 -> TabPill
     364:382:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    383:385:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1099:1099 -> TabPill
+    383:385:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> TabPill
     383:385:void androidx.compose.runtime.RecomposeScopeImpl.updateScope(kotlin.jvm.functions.Function2):39 -> TabPill
-    383:385:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):180 -> TabPill
+    383:385:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):181 -> TabPill
     383:385:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
     386:390:void androidx.compose.runtime.ComposablesKt.ReusableComposeNode(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int):456:456 -> TabPill
-    386:390:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):166 -> TabPill
+    386:390:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):167 -> TabPill
     386:390:void TabPill(java.lang.String,boolean,j1.Function0,u.Composer,int):0 -> TabPill
-    391:391:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):334:334 -> TabPill
+    391:391:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):335:335 -> TabPill
     393:393:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> TabPill
-    393:393:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):334 -> TabPill
-    396:396:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):335:335 -> TabPill
-    400:400:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):335:335 -> TabPill
-    401:401:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):338:338 -> TabPill
-    403:403:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):338:338 -> TabPill
-    406:406:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):339:339 -> TabPill
+    393:393:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):335 -> TabPill
+    396:396:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):336:336 -> TabPill
+    400:400:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):336:336 -> TabPill
+    401:401:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):339:339 -> TabPill
+    403:403:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):339:339 -> TabPill
+    406:406:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):340:340 -> TabPill
     407:407:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> TabPill
     407:407:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> TabPill
-    407:407:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):342 -> TabPill
+    407:407:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):343 -> TabPill
     409:409:void androidx.compose.runtime.ComposerImpl.endNode():1645:1645 -> TabPill
-    409:409:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):343 -> TabPill
+    409:409:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):344 -> TabPill
     412:412:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> TabPill
     412:412:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> TabPill
-    412:412:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):344 -> TabPill
+    412:412:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):345 -> TabPill
     416:416:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> TabPill
     416:416:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> TabPill
-    416:416:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):345 -> TabPill
+    416:416:void TabPill(java.lang.String,boolean,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int):346 -> TabPill
     0:3:java.util.List access$MainScreen$lambda$15(androidx.compose.runtime.MutableState):1:1 -> access$MainScreen$lambda$10
     0:3:void access$MainScreen$lambda$10(androidx.compose.runtime.MutableState,java.util.List):1 -> access$MainScreen$lambda$10
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;Ljava/util/List;)V"}
@@ -104348,20 +104348,23 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$1 -> com.example.wearwifito
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     androidx.compose.ui.focus.FocusRequester $focusRequester -> $focusRequester
       # {"id":"com.android.tools.r8.residualsignature","signature":"LI/l;"}
-    0:10:void <init>(androidx.compose.ui.focus.FocusRequester,com.example.wearwifitools.wifi.WifiManagerHelper,androidx.compose.runtime.MutableState,kotlin.coroutines.Continuation):0:0 -> <init>
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(LI/l;Lcom/example/wearwifitools/wifi/WifiManagerHelper;Lu/l0;Ld1/e;)V"}
-    0:11:kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation):0:0 -> create
+    androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
+    0:12:void <init>(androidx.compose.ui.focus.FocusRequester,com.example.wearwifitools.wifi.WifiManagerHelper,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,kotlin.coroutines.Continuation):0:0 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(LI/l;Lcom/example/wearwifitools/wifi/WifiManagerHelper;Lu/l0;Lu/l0;Ld1/e;)V"}
+    0:15:kotlin.coroutines.Continuation create(java.lang.Object,kotlin.coroutines.Continuation):0:0 -> create
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/Object;Ld1/e;)Ld1/e;"}
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> invoke
     2:2:java.lang.Object invoke(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.Continuation):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Ld1/e;)Ljava/lang/Object;"}
-    2:34:java.lang.Object invokeSuspend(java.lang.Object):62:62 -> invokeSuspend
-    35:36:java.lang.Object invokeSuspend(java.lang.Object):63:63 -> invokeSuspend
-    37:39:void androidx.compose.ui.focus.FocusRequester.requestFocus():63:63 -> invokeSuspend
-    37:39:java.lang.Object invokeSuspend(java.lang.Object):63 -> invokeSuspend
+    2:38:java.lang.Object invokeSuspend(java.lang.Object):62:62 -> invokeSuspend
+    39:40:java.lang.Object invokeSuspend(java.lang.Object):63:63 -> invokeSuspend
+    41:43:void androidx.compose.ui.focus.FocusRequester.requestFocus():63:63 -> invokeSuspend
+    41:43:java.lang.Object invokeSuspend(java.lang.Object):63 -> invokeSuspend
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    40:60:java.lang.Object invokeSuspend(java.lang.Object):65:65 -> invokeSuspend
-    61:73:java.lang.Object invokeSuspend(java.lang.Object):66:66 -> invokeSuspend
+    44:65:java.lang.Object invokeSuspend(java.lang.Object):64:64 -> invokeSuspend
+    66:88:java.lang.Object invokeSuspend(java.lang.Object):66:66 -> invokeSuspend
+    89:101:java.lang.Object invokeSuspend(java.lang.Object):67:67 -> invokeSuspend
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$2 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$2:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     kotlinx.coroutines.CoroutineScope $coroutineScope -> $coroutineScope
@@ -104379,11 +104382,11 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$2 -> com.example.wearwifito
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> invoke
     2:2:java.lang.Object invoke(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.Continuation):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Ld1/e;)Ljava/lang/Object;"}
-    0:6:java.lang.Object invokeSuspend(java.lang.Object):71:71 -> invokeSuspend
-    7:27:java.lang.Object invokeSuspend(java.lang.Object):72:72 -> invokeSuspend
-    28:38:java.lang.Object invokeSuspend(java.lang.Object):73:73 -> invokeSuspend
-    39:41:java.lang.Object invokeSuspend(java.lang.Object):75:75 -> invokeSuspend
-    42:49:java.lang.Object invokeSuspend(java.lang.Object):71:71 -> invokeSuspend
+    0:6:java.lang.Object invokeSuspend(java.lang.Object):72:72 -> invokeSuspend
+    7:27:java.lang.Object invokeSuspend(java.lang.Object):73:73 -> invokeSuspend
+    28:38:java.lang.Object invokeSuspend(java.lang.Object):74:74 -> invokeSuspend
+    39:41:java.lang.Object invokeSuspend(java.lang.Object):76:76 -> invokeSuspend
+    42:49:java.lang.Object invokeSuspend(java.lang.Object):72:72 -> invokeSuspend
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$3$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$3$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104392,10 +104395,10 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$3$1 -> com.example.wearwifi
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(LT/c;)Ljava/lang/Boolean;"}
-    2:3:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):82:83 -> invoke
-    4:4:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):85:85 -> invoke
-    5:5:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):87:87 -> invoke
-    6:6:java.lang.Object invoke(java.lang.Object):81:81 -> invoke
+    2:3:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):83:84 -> invoke
+    4:4:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):86:86 -> invoke
+    5:5:java.lang.Boolean invoke(androidx.compose.ui.input.rotary.RotaryScrollEvent):88:88 -> invoke
+    6:6:java.lang.Object invoke(java.lang.Object):82:82 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     kotlinx.coroutines.CoroutineScope $coroutineScope -> $coroutineScope
@@ -104404,8 +104407,8 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$1 -> com.example.wearwifi
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:10:void <init>(kotlinx.coroutines.CoroutineScope,com.example.wearwifitools.wifi.WifiManagerHelper,androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Lcom/example/wearwifitools/wifi/WifiManagerHelper;Lu/l0;)V"}
-    1:1:java.lang.Object invoke():94:94 -> invoke
-    2:2:void invoke():94:94 -> invoke
+    1:1:java.lang.Object invoke():95:95 -> invoke
+    2:2:void invoke():95:95 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$2 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$2:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     kotlinx.coroutines.CoroutineScope $coroutineScope -> $coroutineScope
@@ -104416,8 +104419,8 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$2 -> com.example.wearwifi
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:12:void <init>(kotlinx.coroutines.CoroutineScope,androidx.compose.runtime.MutableState,com.example.wearwifitools.wifi.WifiManagerHelper,androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Lu/l0;Lcom/example/wearwifitools/wifi/WifiManagerHelper;Lu/l0;)V"}
-    1:1:java.lang.Object invoke():96:96 -> invoke
-    2:2:void invoke():99:99 -> invoke
+    1:1:java.lang.Object invoke():97:97 -> invoke
+    2:2:void invoke():100:100 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$3 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$3:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     kotlinx.coroutines.CoroutineScope $coroutineScope -> $coroutineScope
@@ -104426,8 +104429,8 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$3 -> com.example.wearwifi
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:10:void <init>(kotlinx.coroutines.CoroutineScope,com.example.wearwifitools.wifi.WifiManagerHelper,androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Lcom/example/wearwifitools/wifi/WifiManagerHelper;Lu/l0;)V"}
-    1:1:java.lang.Object invoke():101:101 -> invoke
-    2:2:void invoke():101:101 -> invoke
+    1:1:java.lang.Object invoke():102:102 -> invoke
+    2:2:void invoke():102:102 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     kotlinx.coroutines.CoroutineScope $coroutineScope -> $coroutineScope
@@ -104438,8 +104441,8 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4 -> com.example.wearwifi
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:12:void <init>(kotlinx.coroutines.CoroutineScope,androidx.compose.runtime.MutableState,androidx.compose.runtime.MutableState,com.example.wearwifitools.wifi.WifiManagerHelper):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Lu/l0;Lu/l0;Lcom/example/wearwifitools/wifi/WifiManagerHelper;)V"}
-    1:1:java.lang.Object invoke():102:102 -> invoke
-    2:4:void invoke():106:108 -> invoke
+    1:1:java.lang.Object invoke():103:103 -> invoke
+    2:4:void invoke():107:109 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $discoveredDevices$delegate -> $discoveredDevices$delegate
@@ -104453,18 +104456,18 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4$1 -> com.example.wearwi
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> invoke
     2:2:java.lang.Object invoke(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.Continuation):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/coroutines/B;Ld1/e;)Ljava/lang/Object;"}
-    2:23:java.lang.Object invokeSuspend(java.lang.Object):108:108 -> invokeSuspend
-    24:41:java.lang.Object invokeSuspend(java.lang.Object):109:109 -> invokeSuspend
-    42:47:java.lang.Object invokeSuspend(java.lang.Object):112:112 -> invokeSuspend
-    48:50:java.lang.Object invokeSuspend(java.lang.Object):113:113 -> invokeSuspend
+    2:23:java.lang.Object invokeSuspend(java.lang.Object):109:109 -> invokeSuspend
+    24:41:java.lang.Object invokeSuspend(java.lang.Object):110:110 -> invokeSuspend
+    42:47:java.lang.Object invokeSuspend(java.lang.Object):113:113 -> invokeSuspend
+    48:50:java.lang.Object invokeSuspend(java.lang.Object):114:114 -> invokeSuspend
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$4$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $discoveredDevices$delegate -> $discoveredDevices$delegate
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:6:void <init>(androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
-    1:1:java.lang.Object invoke(java.lang.Object):109:109 -> invoke
-    2:2:void invoke(com.example.wearwifitools.wifi.DiscoveredDevice):110:110 -> invoke
+    1:1:java.lang.Object invoke(java.lang.Object):110:110 -> invoke
+    2:2:void invoke(com.example.wearwifitools.wifi.DiscoveredDevice):111:111 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104473,16 +104476,16 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1 -> com.example.wearwi
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:void invoke(androidx.wear.compose.foundation.CurvedScope):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(LI0/n;)V"}
-    2:2:void invoke(androidx.wear.compose.foundation.CurvedScope):123:123 -> invoke
-    3:3:void invoke(androidx.wear.compose.foundation.CurvedScope):126:126 -> invoke
-    4:4:void invoke(androidx.wear.compose.foundation.CurvedScope):129:129 -> invoke
-    5:5:void invoke(androidx.wear.compose.foundation.CurvedScope):132:132 -> invoke
-    6:6:void invoke(androidx.wear.compose.foundation.CurvedScope):135:135 -> invoke
-    7:7:void invoke(androidx.wear.compose.foundation.CurvedScope):138:138 -> invoke
-    8:8:void invoke(androidx.wear.compose.foundation.CurvedScope):141:141 -> invoke
-    9:9:void invoke(androidx.wear.compose.foundation.CurvedScope):144:144 -> invoke
-    10:10:void invoke(androidx.wear.compose.foundation.CurvedScope):147:147 -> invoke
-    11:11:java.lang.Object invoke(java.lang.Object):122:122 -> invoke
+    2:2:void invoke(androidx.wear.compose.foundation.CurvedScope):124:124 -> invoke
+    3:3:void invoke(androidx.wear.compose.foundation.CurvedScope):127:127 -> invoke
+    4:4:void invoke(androidx.wear.compose.foundation.CurvedScope):130:130 -> invoke
+    5:5:void invoke(androidx.wear.compose.foundation.CurvedScope):133:133 -> invoke
+    6:6:void invoke(androidx.wear.compose.foundation.CurvedScope):136:136 -> invoke
+    7:7:void invoke(androidx.wear.compose.foundation.CurvedScope):139:139 -> invoke
+    8:8:void invoke(androidx.wear.compose.foundation.CurvedScope):142:142 -> invoke
+    9:9:void invoke(androidx.wear.compose.foundation.CurvedScope):145:145 -> invoke
+    10:10:void invoke(androidx.wear.compose.foundation.CurvedScope):148:148 -> invoke
+    11:11:java.lang.Object invoke(java.lang.Object):123:123 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104491,28 +104494,28 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$1 -> com.example.wear
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):124:124 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):125:125 -> invoke
     3:3:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> invoke
-    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):182 -> invoke
+    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):183 -> invoke
     4:4:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> invoke
-    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):124 -> invoke
-    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):124:124 -> invoke
+    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):125 -> invoke
+    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):125:125 -> invoke
     6:6:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> invoke
-    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):185 -> invoke
-    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):124:124 -> invoke
+    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):186 -> invoke
+    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):125:125 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> invoke
-    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):124 -> invoke
-    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):124:124 -> invoke
-    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):123:123 -> invoke
+    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):125 -> invoke
+    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):125:125 -> invoke
+    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):124:124 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$1$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$1$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:6:void <init>(androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
-    1:1:java.lang.Object invoke():124:124 -> invoke
-    2:2:void invoke():124:124 -> invoke
+    1:1:java.lang.Object invoke():125:125 -> invoke
+    2:2:void invoke():125:125 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$2 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$2:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104521,28 +104524,28 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$2 -> com.example.wear
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):130:130 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):131:131 -> invoke
     3:3:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> invoke
-    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):182 -> invoke
+    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):183 -> invoke
     4:4:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> invoke
-    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):130 -> invoke
-    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):130:130 -> invoke
+    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):131 -> invoke
+    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):131:131 -> invoke
     6:6:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> invoke
-    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):185 -> invoke
-    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):130:130 -> invoke
+    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):186 -> invoke
+    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):131:131 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> invoke
-    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):130 -> invoke
-    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):130:130 -> invoke
-    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):129:129 -> invoke
+    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):131 -> invoke
+    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):131:131 -> invoke
+    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):130:130 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$2$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$2$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:6:void <init>(androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
-    1:1:java.lang.Object invoke():130:130 -> invoke
-    2:2:void invoke():130:130 -> invoke
+    1:1:java.lang.Object invoke():131:131 -> invoke
+    2:2:void invoke():131:131 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$3 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$3:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104551,28 +104554,28 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$3 -> com.example.wear
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):136:136 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):137:137 -> invoke
     3:3:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> invoke
-    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):182 -> invoke
+    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):183 -> invoke
     4:4:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> invoke
-    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):136 -> invoke
-    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):136:136 -> invoke
+    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):137 -> invoke
+    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):137:137 -> invoke
     6:6:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> invoke
-    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):185 -> invoke
-    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):136:136 -> invoke
+    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):186 -> invoke
+    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):137:137 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> invoke
-    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):136 -> invoke
-    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):136:136 -> invoke
-    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):135:135 -> invoke
+    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):137 -> invoke
+    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):137:137 -> invoke
+    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):136:136 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$3$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$3$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:6:void <init>(androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
-    1:1:java.lang.Object invoke():136:136 -> invoke
-    2:2:void invoke():136:136 -> invoke
+    1:1:java.lang.Object invoke():137:137 -> invoke
+    2:2:void invoke():137:137 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$4 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$4:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104581,28 +104584,28 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$4 -> com.example.wear
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):142:142 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):143:143 -> invoke
     3:3:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> invoke
-    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):182 -> invoke
+    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):183 -> invoke
     4:4:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> invoke
-    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):142 -> invoke
-    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):142:142 -> invoke
+    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):143 -> invoke
+    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):143:143 -> invoke
     6:6:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> invoke
-    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):185 -> invoke
-    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):142:142 -> invoke
+    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):186 -> invoke
+    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):143:143 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> invoke
-    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):142 -> invoke
-    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):142:142 -> invoke
-    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):141:141 -> invoke
+    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):143 -> invoke
+    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):143:143 -> invoke
+    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):142:142 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$4$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$4$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:6:void <init>(androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
-    1:1:java.lang.Object invoke():142:142 -> invoke
-    2:2:void invoke():142:142 -> invoke
+    1:1:java.lang.Object invoke():143:143 -> invoke
+    2:2:void invoke():143:143 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$5 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$5:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
@@ -104611,28 +104614,28 @@ com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$5 -> com.example.wear
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
     1:1:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):0:0 -> invoke
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lm/n;Lu/k;I)V"}
-    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):148:148 -> invoke
+    2:2:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):149:149 -> invoke
     3:3:java.lang.Object androidx.compose.runtime.ComposerImpl.rememberedValue():4117:4117 -> invoke
-    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):182 -> invoke
+    3:3:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):183 -> invoke
     4:4:java.lang.Object androidx.compose.runtime.ComposerKt.cache(androidx.compose.runtime.Composer,boolean,kotlin.jvm.functions.Function0):1098:1098 -> invoke
-    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):148 -> invoke
-    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):148:148 -> invoke
+    4:4:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):149 -> invoke
+    5:5:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):149:149 -> invoke
     6:6:void androidx.compose.runtime.ComposerImpl.updateRememberedValue(java.lang.Object):4118:4118 -> invoke
-    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):185 -> invoke
-    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):148:148 -> invoke
+    6:6:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):186 -> invoke
+    7:7:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):149:149 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endGroup():1573:1573 -> invoke
     8:8:void androidx.compose.runtime.ComposerImpl.endReplaceableGroup():1335 -> invoke
-    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):148 -> invoke
-    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):148:148 -> invoke
-    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):147:147 -> invoke
+    8:8:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):149 -> invoke
+    9:9:void invoke(androidx.compose.foundation.layout.BoxScope,androidx.compose.runtime.Composer,int):149:149 -> invoke
+    10:10:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object):148:148 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$5$1$1 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$4$5$1$5$1$1:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     androidx.compose.runtime.MutableState $selectedTab$delegate -> $selectedTab$delegate
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lu/l0;"}
     0:6:void <init>(androidx.compose.runtime.MutableState):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lu/l0;)V"}
-    1:1:java.lang.Object invoke():148:148 -> invoke
-    2:2:void invoke():148:148 -> invoke
+    1:1:java.lang.Object invoke():149:149 -> invoke
+    2:2:void invoke():149:149 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$MainScreen$5 -> com.example.wearwifitools.ui.MainScreenKt$MainScreen$5:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     1:1:java.lang.Object invoke(java.lang.Object,java.lang.Object):0:0 -> invoke
@@ -104675,8 +104678,8 @@ com.example.wearwifitools.ui.MainScreenKt$TabPill$1$1 -> com.example.wearwifitoo
       # {"id":"com.android.tools.r8.residualsignature","signature":"Lj1/a;"}
     0:6:void <init>(kotlin.jvm.functions.Function0):0:0 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lj1/a;)V"}
-    1:1:java.lang.Object invoke():170:170 -> invoke
-    2:2:void invoke():170:170 -> invoke
+    1:1:java.lang.Object invoke():171:171 -> invoke
+    2:2:void invoke():171:171 -> invoke
 com.example.wearwifitools.ui.MainScreenKt$TabPill$3 -> com.example.wearwifitools.ui.MainScreenKt$TabPill$3:
 # {"id":"sourceFile","fileName":"MainScreen.kt"}
     kotlin.jvm.functions.Function0 $onClick -> $onClick

@@ -58,12 +58,13 @@ fun MainScreen() {
         }
     }
 
-    // Auto-Refresh Signal Every 3 Seconds
-    LaunchedEffect(Unit) {
+    // High-Speed Signal Refresh (400ms when Radar/Signal selected, 2000ms otherwise)
+    LaunchedEffect(selectedTab) {
         focusRequester.requestFocus()
+        val interval = if (selectedTab == 0 || selectedTab == 1) 400L else 2000L
         while (true) {
             diagnosticData = wifiHelper.getDiagnosticData()
-            delay(3000)
+            delay(interval)
         }
     }
 
