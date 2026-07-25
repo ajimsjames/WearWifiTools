@@ -3,7 +3,6 @@ package com.example.wearwifitools.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.focusable
-import androidx.compose.foundation.gestures.scrollBy
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.*
@@ -21,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.wear.compose.material.Text
 import com.example.wearwifitools.wifi.DiscoveredDevice
+import com.example.wearwifitools.wifi.NearbyWifiNetwork
 import com.example.wearwifitools.wifi.WifiDiagnosticData
 import com.example.wearwifitools.wifi.WifiManagerHelper
 import kotlinx.coroutines.delay
@@ -34,10 +34,12 @@ fun MainScreen() {
     val coroutineScope = rememberCoroutineScope()
     val focusRequester = remember { FocusRequester() }
 
-    var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Ping, 2: Scan
+    var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Nearby APs, 2: Ping, 3: LAN Scan
     var diagnosticData by remember { mutableStateOf(WifiDiagnosticData()) }
+    var nearbyNetworks by remember { mutableStateOf(listOf<NearbyWifiNetwork>()) }
+    var isApScanning by remember { mutableStateOf(false) }
     var discoveredDevices by remember { mutableStateOf(listOf<DiscoveredDevice>()) }
-    var isScanning by remember { mutableStateOf(false) }
+    var isLanScanning by remember { mutableStateOf(false) }
 
     fun refreshData() {
         coroutineScope.launch {
@@ -45,12 +47,28 @@ fun MainScreen() {
         }
     }
 
-    // Auto-Refresh Every 4 Seconds
+    fun startApScan() {
+        if (isApScanning) return
+        isApScanning = true
+        coroutineScope.launch {
+            nearbyNetworks = wifiHelper.getNearbyWifiNetworks()
+            isApScanning = false
+        }
+    }
+
+    // Auto-Refresh Signal Every 4 Seconds
     LaunchedEffect(Unit) {
         focusRequester.requestFocus()
         while (true) {
             diagnosticData = wifiHelper.getDiagnosticData()
             delay(4000)
+        }
+    }
+
+    // Auto-scan APs when tab 1 is selected
+    LaunchedEffect(selectedTab) {
+        if (selectedTab == 1 && nearbyNetworks.isEmpty()) {
+            startApScan()
         }
     }
 
@@ -60,7 +78,7 @@ fun MainScreen() {
             .background(Color.Black)
             .onRotaryScrollEvent { event ->
                 if (event.verticalScrollPixels > 0) {
-                    if (selectedTab < 2) selectedTab++
+                    if (selectedTab < 3) selectedTab++
                 } else if (event.verticalScrollPixels < 0) {
                     if (selectedTab > 0) selectedTab--
                 }
@@ -72,18 +90,23 @@ fun MainScreen() {
         // Tab Content
         when (selectedTab) {
             0 -> SignalScreen(data = diagnosticData, onRefresh = { refreshData() })
-            1 -> PingScreen(data = diagnosticData, onRunPing = { refreshData() })
-            2 -> ScanScreen(
+            1 -> NetworksScreen(
+                networks = nearbyNetworks,
+                isScanning = isApScanning,
+                onStartScan = { startApScan() }
+            )
+            2 -> PingScreen(data = diagnosticData, onRunPing = { refreshData() })
+            3 -> ScanScreen(
                 devices = discoveredDevices,
-                isScanning = isScanning,
+                isScanning = isLanScanning,
                 onStartScan = {
-                    isScanning = true
+                    isLanScanning = true
                     discoveredDevices = emptyList()
                     coroutineScope.launch {
-                        val found = wifiHelper.scanLocalSubnet { dev ->
+                        wifiHelper.scanLocalSubnet { dev ->
                             discoveredDevices = discoveredDevices + dev
                         }
-                        isScanning = false
+                        isLanScanning = false
                     }
                 }
             )
@@ -96,12 +119,13 @@ fun MainScreen() {
                 .padding(top = 4.dp)
                 .clip(RoundedCornerShape(12.dp))
                 .background(Color(0xCC000000))
-                .padding(horizontal = 6.dp, vertical = 2.dp),
-            horizontalArrangement = Arrangement.spacedBy(4.dp)
+                .padding(horizontal = 4.dp, vertical = 2.dp),
+            horizontalArrangement = Arrangement.spacedBy(3.dp)
         ) {
             TabPill("📶 Signal", selected = selectedTab == 0) { selectedTab = 0 }
-            TabPill("⚡ Ping", selected = selectedTab == 1) { selectedTab = 1 }
-            TabPill("🔍 Scan", selected = selectedTab == 2) { selectedTab = 2 }
+            TabPill("🌐 APs", selected = selectedTab == 1) { selectedTab = 1 }
+            TabPill("⚡ Ping", selected = selectedTab == 2) { selectedTab = 2 }
+            TabPill("🔍 LAN", selected = selectedTab == 3) { selectedTab = 3 }
         }
 
         // Bottom Author Credits
@@ -123,7 +147,7 @@ fun TabPill(text: String, selected: Boolean, onClick: () -> Unit) {
             .clip(RoundedCornerShape(8.dp))
             .background(if (selected) Color(0xFF1565C0) else Color(0xFF2C2C2E))
             .clickable { onClick() }
-            .padding(horizontal = 6.dp, vertical = 2.dp)
+            .padding(horizontal = 5.dp, vertical = 2.dp)
     ) {
         Text(
             text = text,

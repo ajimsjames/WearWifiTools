@@ -3,6 +3,7 @@ package com.example.wearwifitools.wifi
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
+import android.net.wifi.ScanResult
 import android.net.wifi.WifiInfo
 import android.net.wifi.WifiManager
 import android.text.format.Formatter
@@ -33,6 +34,16 @@ data class DiscoveredDevice(
     val ip: String,
     val pingMs: Long,
     val hostname: String = "Active Device"
+)
+
+data class NearbyWifiNetwork(
+    val ssid: String,
+    val bssid: String,
+    val rssi: Int,
+    val frequencyMhz: Int,
+    val bandStr: String,
+    val channel: Int,
+    val capabilities: String
 )
 
 class WifiManagerHelper(private val context: Context) {
@@ -88,6 +99,47 @@ class WifiManagerHelper(private val context: Context) {
         )
     }
 
+    @Suppress("DEPRECATION")
+    suspend fun getNearbyWifiNetworks(): List<NearbyWifiNetwork> = withContext(Dispatchers.IO) {
+        try {
+            wifiManager.startScan()
+            val results: List<ScanResult>? = wifiManager.scanResults
+            if (results.isNullOrEmpty()) return@withContext emptyList()
+
+            results.map { res ->
+                var ssid = res.SSID ?: "Hidden Network"
+                if (ssid.isEmpty()) ssid = "Hidden Network"
+                val (bandStr, channel) = parseFrequencyAndChannel(res.frequency)
+                val security = parseCapabilities(res.capabilities)
+
+                NearbyWifiNetwork(
+                    ssid = ssid,
+                    bssid = res.BSSID ?: "--",
+                    rssi = res.level,
+                    frequencyMhz = res.frequency,
+                    bandStr = bandStr,
+                    channel = channel,
+                    capabilities = security
+                )
+            }.sortedByDescending { it.rssi }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            emptyList()
+        }
+    }
+
+    private fun parseCapabilities(cap: String?): String {
+        if (cap.isNullOrEmpty()) return "Open"
+        return when {
+            cap.contains("WPA3", ignoreCase = true) -> "WPA3"
+            cap.contains("WPA2", ignoreCase = true) -> "WPA2"
+            cap.contains("WPA", ignoreCase = true) -> "WPA"
+            cap.contains("WEP", ignoreCase = true) -> "WEP"
+            cap.contains("ESS", ignoreCase = true) -> "Open"
+            else -> "Open"
+        }
+    }
+
     private fun parseFrequencyAndChannel(freqMhz: Int): Pair<String, Int> {
         return when {
             freqMhz in 2412..2484 -> {
@@ -113,7 +165,6 @@ class WifiManagerHelper(private val context: Context) {
             socket.close()
             System.currentTimeMillis() - startTime
         } catch (e: Exception) {
-            // Try fallback ICMP ping check
             try {
                 val inet = InetAddress.getByName(host)
                 if (inet.isReachable(1000)) {
@@ -138,7 +189,6 @@ class WifiManagerHelper(private val context: Context) {
 
         val prefix = gatewayIpStr.substringBeforeLast(".") + "."
 
-        // Fast scan subnet range (1 to 254)
         for (i in 1..254) {
             val targetIp = "$prefix$i"
             val ping = testPingHost(targetIp, 80)
