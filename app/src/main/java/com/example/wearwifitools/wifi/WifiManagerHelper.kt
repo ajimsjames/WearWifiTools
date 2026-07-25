@@ -7,11 +7,11 @@ import android.net.wifi.ScanResult
 import android.net.wifi.WifiInfo
 import android.net.wifi.WifiManager
 import android.text.format.Formatter
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import java.net.InetAddress
 import java.net.InetSocketAddress
 import java.net.Socket
+import java.util.Collections
 
 data class WifiDiagnosticData(
     val isConnected: Boolean = false,
@@ -161,13 +161,13 @@ class WifiManagerHelper(private val context: Context) {
         val startTime = System.currentTimeMillis()
         return try {
             val socket = Socket()
-            socket.connect(InetSocketAddress(host, port), 1200)
+            socket.connect(InetSocketAddress(host, port), 400)
             socket.close()
             System.currentTimeMillis() - startTime
         } catch (e: Exception) {
             try {
                 val inet = InetAddress.getByName(host)
-                if (inet.isReachable(1000)) {
+                if (inet.isReachable(300)) {
                     System.currentTimeMillis() - startTime
                 } else {
                     -1L
@@ -179,7 +179,7 @@ class WifiManagerHelper(private val context: Context) {
     }
 
     suspend fun scanLocalSubnet(onDeviceFound: (DiscoveredDevice) -> Unit): List<DiscoveredDevice> = withContext(Dispatchers.IO) {
-        val foundList = mutableListOf<DiscoveredDevice>()
+        val foundList = Collections.synchronizedList(mutableListOf<DiscoveredDevice>())
         val dhcpInfo = wifiManager.dhcpInfo ?: return@withContext emptyList()
         val gatewayIpStr = Formatter.formatIpAddress(dhcpInfo.gateway)
 
@@ -189,19 +189,29 @@ class WifiManagerHelper(private val context: Context) {
 
         val prefix = gatewayIpStr.substringBeforeLast(".") + "."
 
-        for (i in 1..254) {
-            val targetIp = "$prefix$i"
-            val ping = testPingHost(targetIp, 80)
-            if (ping >= 0) {
-                val dev = DiscoveredDevice(
-                    ip = targetIp,
-                    pingMs = ping,
-                    hostname = if (targetIp == gatewayIpStr) "Router Gateway 🌐" else "Connected Host 💻"
-                )
-                foundList.add(dev)
-                onDeviceFound(dev)
-            }
+        // Parallel multi-threaded scan (30 concurrent async tasks)
+        coroutineScope {
+            (1..254).chunked(25).map { chunk ->
+                async(Dispatchers.IO) {
+                    for (i in chunk) {
+                        val targetIp = "$prefix$i"
+                        val ping = testPingHost(targetIp, 80)
+                        if (ping >= 0) {
+                            val dev = DiscoveredDevice(
+                                ip = targetIp,
+                                pingMs = ping,
+                                hostname = if (targetIp == gatewayIpStr) "Router Gateway 🌐" else "Connected Host 💻"
+                            )
+                            foundList.add(dev)
+                            withContext(Dispatchers.Main) {
+                                onDeviceFound(dev)
+                            }
+                        }
+                    }
+                }
+            }.awaitAll()
         }
+
         foundList
     }
 }
