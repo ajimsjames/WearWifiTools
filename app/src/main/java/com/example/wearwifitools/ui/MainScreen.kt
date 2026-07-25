@@ -18,6 +18,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.wear.compose.foundation.CurvedLayout
+import androidx.wear.compose.foundation.curvedComposable
 import androidx.wear.compose.material.Text
 import com.example.wearwifitools.wifi.DiscoveredDevice
 import com.example.wearwifitools.wifi.NearbyWifiNetwork
@@ -112,20 +114,32 @@ fun MainScreen() {
             )
         }
 
-        // Top Navigation Bar
-        Row(
-            modifier = Modifier
-                .align(Alignment.TopCenter)
-                .padding(top = 4.dp)
-                .clip(RoundedCornerShape(12.dp))
-                .background(Color(0xCC000000))
-                .padding(horizontal = 4.dp, vertical = 2.dp),
-            horizontalArrangement = Arrangement.spacedBy(3.dp)
+        // Curved Bezel Top Navigation Bar
+        CurvedLayout(
+            anchor = 270f, // 270° = Top Center of circular display
+            modifier = Modifier.fillMaxSize()
         ) {
-            TabPill("📶 Signal", selected = selectedTab == 0) { selectedTab = 0 }
-            TabPill("🌐 APs", selected = selectedTab == 1) { selectedTab = 1 }
-            TabPill("⚡ Ping", selected = selectedTab == 2) { selectedTab = 2 }
-            TabPill("🔍 LAN", selected = selectedTab == 3) { selectedTab = 3 }
+            curvedComposable {
+                TabPill("📶 Signal", selected = selectedTab == 0) { selectedTab = 0 }
+            }
+            curvedComposable {
+                Spacer(modifier = Modifier.width(3.dp))
+            }
+            curvedComposable {
+                TabPill("🌐 APs", selected = selectedTab == 1) { selectedTab = 1 }
+            }
+            curvedComposable {
+                Spacer(modifier = Modifier.width(3.dp))
+            }
+            curvedComposable {
+                TabPill("⚡ Ping", selected = selectedTab == 2) { selectedTab = 2 }
+            }
+            curvedComposable {
+                Spacer(modifier = Modifier.width(3.dp))
+            }
+            curvedComposable {
+                TabPill("🔍 LAN", selected = selectedTab == 3) { selectedTab = 3 }
+            }
         }
 
         // Bottom Author Credits
@@ -144,10 +158,10 @@ fun MainScreen() {
 fun TabPill(text: String, selected: Boolean, onClick: () -> Unit) {
     Box(
         modifier = Modifier
-            .clip(RoundedCornerShape(8.dp))
+            .clip(RoundedCornerShape(10.dp))
             .background(if (selected) Color(0xFF1565C0) else Color(0xFF2C2C2E))
             .clickable { onClick() }
-            .padding(horizontal = 5.dp, vertical = 2.dp)
+            .padding(horizontal = 6.dp, vertical = 3.dp)
     ) {
         Text(
             text = text,
