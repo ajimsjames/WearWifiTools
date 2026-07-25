@@ -36,7 +36,7 @@ fun MainScreen() {
     val coroutineScope = rememberCoroutineScope()
     val focusRequester = remember { FocusRequester() }
 
-    var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Nearby APs, 2: Ping, 3: LAN Scan
+    var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Radar, 2: Nearby APs, 3: Ping, 4: LAN Scan
     var diagnosticData by remember { mutableStateOf(WifiDiagnosticData()) }
     var nearbyNetworks by remember { mutableStateOf(listOf<NearbyWifiNetwork>()) }
     var isApScanning by remember { mutableStateOf(false) }
@@ -58,18 +58,18 @@ fun MainScreen() {
         }
     }
 
-    // Auto-Refresh Signal Every 4 Seconds
+    // Auto-Refresh Signal Every 3 Seconds
     LaunchedEffect(Unit) {
         focusRequester.requestFocus()
         while (true) {
             diagnosticData = wifiHelper.getDiagnosticData()
-            delay(4000)
+            delay(3000)
         }
     }
 
-    // Auto-scan APs when tab 1 is selected
+    // Auto-scan APs when tab 2 is selected
     LaunchedEffect(selectedTab) {
-        if (selectedTab == 1 && nearbyNetworks.isEmpty()) {
+        if (selectedTab == 2 && nearbyNetworks.isEmpty()) {
             startApScan()
         }
     }
@@ -80,7 +80,7 @@ fun MainScreen() {
             .background(Color.Black)
             .onRotaryScrollEvent { event ->
                 if (event.verticalScrollPixels > 0) {
-                    if (selectedTab < 3) selectedTab++
+                    if (selectedTab < 4) selectedTab++
                 } else if (event.verticalScrollPixels < 0) {
                     if (selectedTab > 0) selectedTab--
                 }
@@ -92,13 +92,14 @@ fun MainScreen() {
         // Tab Content
         when (selectedTab) {
             0 -> SignalScreen(data = diagnosticData, onRefresh = { refreshData() })
-            1 -> NetworksScreen(
+            1 -> RadarScreen(data = diagnosticData)
+            2 -> NetworksScreen(
                 networks = nearbyNetworks,
                 isScanning = isApScanning,
                 onStartScan = { startApScan() }
             )
-            2 -> PingScreen(data = diagnosticData, onRunPing = { refreshData() })
-            3 -> ScanScreen(
+            3 -> PingScreen(data = diagnosticData, onRunPing = { refreshData() })
+            4 -> ScanScreen(
                 devices = discoveredDevices,
                 isScanning = isLanScanning,
                 onStartScan = {
@@ -120,25 +121,31 @@ fun MainScreen() {
             modifier = Modifier.fillMaxSize()
         ) {
             curvedComposable {
-                TabPill("📶 Signal", selected = selectedTab == 0) { selectedTab = 0 }
+                TabPill("📶 Sig", selected = selectedTab == 0) { selectedTab = 0 }
             }
             curvedComposable {
-                Spacer(modifier = Modifier.width(3.dp))
+                Spacer(modifier = Modifier.width(2.dp))
             }
             curvedComposable {
-                TabPill("🌐 APs", selected = selectedTab == 1) { selectedTab = 1 }
+                TabPill("🧭 Radar", selected = selectedTab == 1) { selectedTab = 1 }
             }
             curvedComposable {
-                Spacer(modifier = Modifier.width(3.dp))
+                Spacer(modifier = Modifier.width(2.dp))
             }
             curvedComposable {
-                TabPill("⚡ Ping", selected = selectedTab == 2) { selectedTab = 2 }
+                TabPill("🌐 APs", selected = selectedTab == 2) { selectedTab = 2 }
             }
             curvedComposable {
-                Spacer(modifier = Modifier.width(3.dp))
+                Spacer(modifier = Modifier.width(2.dp))
             }
             curvedComposable {
-                TabPill("🔍 LAN", selected = selectedTab == 3) { selectedTab = 3 }
+                TabPill("⚡ Ping", selected = selectedTab == 3) { selectedTab = 3 }
+            }
+            curvedComposable {
+                Spacer(modifier = Modifier.width(2.dp))
+            }
+            curvedComposable {
+                TabPill("🔍 LAN", selected = selectedTab == 4) { selectedTab = 4 }
             }
         }
 
@@ -158,15 +165,15 @@ fun MainScreen() {
 fun TabPill(text: String, selected: Boolean, onClick: () -> Unit) {
     Box(
         modifier = Modifier
-            .clip(RoundedCornerShape(10.dp))
+            .clip(RoundedCornerShape(8.dp))
             .background(if (selected) Color(0xFF1565C0) else Color(0xFF2C2C2E))
             .clickable { onClick() }
-            .padding(horizontal = 6.dp, vertical = 3.dp)
+            .padding(horizontal = 4.dp, vertical = 2.dp)
     ) {
         Text(
             text = text,
             color = if (selected) Color.White else Color.Gray,
-            fontSize = 8.sp,
+            fontSize = 7.5.sp,
             fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal
         )
     }
