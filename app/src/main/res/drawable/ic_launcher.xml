@@ -1,0 +1,53 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#0D1B2A"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+
+    <!-- Outer Accent Ring -->
+    <path
+        android:strokeColor="#1E3A8A"
+        android:strokeWidth="3"
+        android:pathData="M54,54m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0" />
+
+    <!-- Wi-Fi Outer Arc -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M 28,42 A 32,32 0 0,1 80,42" />
+
+    <!-- Wi-Fi Middle Arc -->
+    <path
+        android:strokeColor="#0288D1"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M 36,52 A 22,22 0 0,1 72,52" />
+
+    <!-- Wi-Fi Inner Arc -->
+    <path
+        android:strokeColor="#00E676"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M 44,62 A 12,12 0 0,1 64,62" />
+
+    <!-- Center Radar Dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,72m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+    <!-- Rotating Green Compass Needle Overlay -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M 54,28 L 60,50 L 54,46 L 48,50 Z" />
+
+    <!-- South Compass Needle Overlay (Dark) -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M 54,70 L 60,50 L 54,46 L 48,50 Z" />
+</vector>

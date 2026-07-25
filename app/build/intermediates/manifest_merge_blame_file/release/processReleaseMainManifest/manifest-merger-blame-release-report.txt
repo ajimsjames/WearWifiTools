@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.example.wearwifitools"
-4    android:versionCode="9"
-5    android:versionName="1.5.0" >
+4    android:versionCode="10"
+5    android:versionName="1.5.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="30"
@@ -52,8 +52,8 @@
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.10.1] /home/aju/.gradle/caches/transforms-3/6504ac029fd8969e257c6bd21c806530/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 30        android:extractNativeLibs="false"
-31        android:icon="@android:drawable/ic_menu_info_details"
-31-->/home/aju/WearWifiTools/app/src/main/AndroidManifest.xml:16:9-62
+31        android:icon="@drawable/ic_launcher"
+31-->/home/aju/WearWifiTools/app/src/main/AndroidManifest.xml:16:9-45
 32        android:label="Wear Wi-Fi Tools"
 32-->/home/aju/WearWifiTools/app/src/main/AndroidManifest.xml:17:9-41
 33        android:supportsRtl="true"
