@@ -22,8 +22,10 @@ import com.example.wearwifitools.wifi.NearbyWifiNetwork
 @Composable
 fun NetworksScreen(
     networks: List<NearbyWifiNetwork>,
+    selectedTargetBssid: String?,
     isScanning: Boolean,
-    onStartScan: () -> Unit
+    onStartScan: () -> Unit,
+    onSelectTargetAp: (NearbyWifiNetwork) -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -48,7 +50,7 @@ fun NetworksScreen(
 
             item {
                 Text(
-                    text = if (isScanning) "Scanning channels..." else if (networks.isEmpty()) "Tap Rescan to detect APs" else "Found ${networks.size} Access Points",
+                    text = if (isScanning) "Scanning channels..." else if (networks.isEmpty()) "Tap Rescan to detect APs" else "Tap 🧭 on any AP to track direction",
                     color = Color.Gray,
                     fontSize = 9.sp,
                     modifier = Modifier.padding(bottom = 6.dp)
@@ -99,13 +101,15 @@ fun NetworksScreen(
                     }
 
                     val signalPercent = ((net.rssi + 100) * 2).coerceIn(0, 100)
+                    val isTargeted = selectedTargetBssid == net.bssid
 
                     Box(
                         modifier = Modifier
                             .fillMaxWidth(0.92f)
-                            .padding(vertical = 2.dp)
+                            .padding(vertical = 3.dp)
                             .clip(RoundedCornerShape(10.dp))
-                            .background(Color(0xFF1C1C1E))
+                            .background(if (isTargeted) Color(0xFF1A3A5C) else Color(0xFF1C1C1E))
+                            .clickable { onSelectTargetAp(net) }
                             .padding(horizontal = 8.dp, vertical = 6.dp)
                     ) {
                         Column {
@@ -141,16 +145,25 @@ fun NetworksScreen(
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
                                 Text(
-                                    text = "Ch ${net.channel} (${net.bandStr}) • ${net.capabilities}",
+                                    text = "Ch ${net.channel} (${net.bandStr})",
                                     color = Color(0xFF90CAF9),
                                     fontSize = 8.sp
                                 )
 
-                                Text(
-                                    text = "$signalPercent%",
-                                    color = Color.Gray,
-                                    fontSize = 8.sp
-                                )
+                                // Track Radar Button
+                                Box(
+                                    modifier = Modifier
+                                        .clip(RoundedCornerShape(6.dp))
+                                        .background(if (isTargeted) Color(0xFF00E676) else Color(0xFF2C2C36))
+                                        .padding(horizontal = 6.dp, vertical = 2.dp)
+                                ) {
+                                    Text(
+                                        text = if (isTargeted) "🧭 Tracking" else "🧭 Locate AP",
+                                        color = if (isTargeted) Color.Black else Color.White,
+                                        fontSize = 8.sp,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                }
                             }
 
                             // Signal level visual bar

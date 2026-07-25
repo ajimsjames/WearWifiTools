@@ -2051,7 +2051,6 @@ androidx.compose.foundation.layout.Arrangement:
     public final androidx.compose.foundation.layout.Arrangement$Vertical aligned(androidx.compose.ui.Alignment$Vertical)
     private final void forEachIndexed(int[],boolean,kotlin.jvm.functions.Function2)
     public static synthetic void getBottom$annotations()
-    public final androidx.compose.foundation.layout.Arrangement$HorizontalOrVertical getCenter()
     public static synthetic void getCenter$annotations()
     public final androidx.compose.foundation.layout.Arrangement$Horizontal getEnd()
     public static synthetic void getEnd$annotations()
@@ -14526,7 +14525,6 @@ androidx.compose.runtime.EffectsKt:
     public static final void DisposableEffect(kotlin.jvm.functions.Function1,androidx.compose.runtime.Composer,int)
     public static final void DisposableEffect(java.lang.Object[],kotlin.jvm.functions.Function1,androidx.compose.runtime.Composer,int)
     public static final void LaunchedEffect(java.lang.Object,java.lang.Object,java.lang.Object,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int)
-    public static final void LaunchedEffect(java.lang.Object,java.lang.Object,kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int)
     public static final void LaunchedEffect(kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int)
     public static final void LaunchedEffect(java.lang.Object[],kotlin.jvm.functions.Function2,androidx.compose.runtime.Composer,int)
     public static final kotlinx.coroutines.CoroutineScope rememberCoroutineScope(kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int,int)
@@ -37309,12 +37307,12 @@ androidx.compose.foundation.layout.Arrangement$SpaceEvenly$1
 androidx.compose.foundation.layout.Arrangement$Start$1
 androidx.compose.foundation.layout.Arrangement$Top$1
 androidx.compose.foundation.layout.Arrangement:
-    public static final androidx.compose.foundation.layout.Arrangement$HorizontalOrVertical Center
     public static final androidx.compose.foundation.layout.Arrangement$Horizontal End
     public static final androidx.compose.foundation.layout.Arrangement INSTANCE
     public static final androidx.compose.foundation.layout.Arrangement$HorizontalOrVertical SpaceAround
     public static final androidx.compose.foundation.layout.Arrangement$HorizontalOrVertical SpaceEvenly
     public static androidx.compose.foundation.layout.Arrangement$Vertical getBottom()
+    public static androidx.compose.foundation.layout.Arrangement$Center$1 getCenter()
     public static androidx.compose.foundation.layout.Arrangement$HorizontalOrVertical getSpaceBetween()
     public static androidx.compose.foundation.layout.Arrangement$Horizontal getStart()
     public static androidx.compose.foundation.layout.Arrangement$Vertical getTop()
@@ -38151,7 +38149,7 @@ androidx.compose.runtime.Composer:
     public abstract kotlin.coroutines.CoroutineContext getApplyCoroutineContext()
     public abstract androidx.compose.runtime.tooling.CompositionData getCompositionData()
     public abstract int getCompoundKeyHash()
-    public abstract androidx.compose.runtime.CompositionLocalMap getCurrentCompositionLocalMap()
+    public abstract androidx.compose.runtime.PersistentCompositionLocalMap getCurrentCompositionLocalMap()
     public abstract boolean getDefaultsInvalid()
     public abstract boolean getInserting()
     public abstract androidx.compose.runtime.RecomposeScope getRecomposeScope()
@@ -38170,7 +38168,7 @@ androidx.compose.runtime.Composer:
     public abstract androidx.compose.runtime.ComposerImpl startRestartGroup(int)
     public abstract void startReusableGroup(java.lang.Object)
     public abstract void startReusableNode()
-    public abstract void updateRememberedValue()
+    public abstract void updateRememberedValue(java.lang.Object)
     public abstract void useNode()
 androidx.compose.runtime.ComposerImpl$$InternalSyntheticThrowCCEIfNotNull$127$063a0a8cadbfa8d63e10930c0b04c2427b8214f8ac50581fc7ccbadab9fc87ea$0
 androidx.compose.runtime.ComposerImpl$CompositionContextHolder:
@@ -38246,7 +38244,7 @@ androidx.compose.runtime.ComposerImpl:
     public static androidx.compose.runtime.CompositionImpl getComposition()
     public final androidx.compose.runtime.tooling.CompositionData getCompositionData()
     public final int getCompoundKeyHash()
-    public final androidx.compose.runtime.CompositionLocalMap getCurrentCompositionLocalMap()
+    public final androidx.compose.runtime.PersistentCompositionLocalMap getCurrentCompositionLocalMap()
     public static java.util.List getDeferredChanges$runtime_release()
     public final boolean getInserting()
     public static java.lang.Object getNode()
@@ -38290,7 +38288,7 @@ androidx.compose.runtime.ComposerImpl:
     public final void startNode()
     public final void startProviders()
     public final void updateCompoundKeyWhenWeEnterGroupKeyHash(int)
-    public final void updateRememberedValue()
+    public final void updateRememberedValue(java.lang.Object)
     public final void validateNodeExpected()
     public final void validateNodeNotExpected()
 androidx.compose.runtime.ComposerKt$endGroupInstance$1
@@ -38623,6 +38621,8 @@ androidx.compose.runtime.ScopeUpdateScope
 androidx.compose.runtime.SdkStubsFallbackFrameClock$withFrameNanos$2
 androidx.compose.runtime.SdkStubsFallbackFrameClock
 androidx.compose.runtime.SkippableUpdater:
+    public static final synthetic androidx.compose.runtime.SkippableUpdater box-impl(androidx.compose.runtime.Composer)
+    public static void constructor-impl(androidx.compose.runtime.Composer)
     public static synthetic androidx.compose.runtime.Composer unbox-impl()
 androidx.compose.runtime.SlotReader:
     public final void beginEmpty()
@@ -41191,11 +41191,11 @@ androidx.compose.ui.node.ComposeUiNode$Companion:
     public static final kotlin.jvm.functions.Function2 SetLayoutDirection
     public static final kotlin.jvm.functions.Function2 SetViewConfiguration
     public static final kotlin.jvm.functions.Function0 VirtualConstructor
-    public static kotlin.jvm.functions.Function0 getConstructor()
-    public static kotlin.jvm.functions.Function2 getSetCompositeKeyHash()
-    public static kotlin.jvm.functions.Function2 getSetMeasurePolicy()
+    public static androidx.compose.ui.node.ComposeUiNode$Companion$VirtualConstructor$1 getConstructor()
+    public static androidx.compose.ui.node.ComposeUiNode$Companion$SetCompositeKeyHash$1 getSetCompositeKeyHash()
+    public static androidx.compose.ui.node.ComposeUiNode$Companion$SetCompositeKeyHash$1 getSetMeasurePolicy()
     public static kotlin.jvm.functions.Function2 getSetModifier()
-    public static kotlin.jvm.functions.Function2 getSetResolvedCompositionLocals()
+    public static androidx.compose.ui.node.ComposeUiNode$Companion$SetCompositeKeyHash$1 getSetResolvedCompositionLocals()
 androidx.compose.ui.node.ComposeUiNode:
     public abstract void setCompositeKeyHash()
     public abstract void setCompositionLocalMap()
@@ -41958,6 +41958,8 @@ androidx.compose.ui.platform.AndroidCompositionLocals_androidKt$ProvideAndroidCo
 androidx.compose.ui.platform.AndroidCompositionLocals_androidKt$ProvideAndroidCompositionLocals$4
 androidx.compose.ui.platform.AndroidCompositionLocals_androidKt$obtainImageVectorCache$1$invoke$$inlined$onDispose$1
 androidx.compose.ui.platform.AndroidCompositionLocals_androidKt$obtainImageVectorCache$1
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt:
+    public static final androidx.compose.runtime.StaticProvidableCompositionLocal getLocalContext()
 androidx.compose.ui.platform.AndroidFontResourceLoader:
     public final android.content.Context context
 androidx.compose.ui.platform.AndroidTextToolbar$textActionModeCallback$1
@@ -46157,6 +46159,7 @@ kotlin.jvm.internal.Intrinsics$Kotlin:
     public abstract int getOffset()
     public abstract boolean getShareWithSiblings()
     public static kotlin.coroutines.CoroutineContext minusKey(androidx.compose.ui.MotionDurationScale,kotlin.coroutines.CoroutineContext$Key)
+    public static final androidx.compose.runtime.snapshots.SnapshotStateMap mutableStateMapOf()
     public static synthetic androidx.compose.runtime.ParcelableSnapshotMutableState mutableStateOf$default(java.lang.Object)
     public static final androidx.compose.runtime.SnapshotMutationPolicy neverEqualPolicy()
     public abstract void onCancel()
@@ -46395,6 +46398,7 @@ kotlinx.coroutines.CoroutinesInternalError
 kotlinx.coroutines.DebugKt
 kotlinx.coroutines.DebugStringsKt:
     public static final int EmptyPointerKeyboardModifiers()
+    public static void constructor-impl(androidx.compose.runtime.Composer)
     public static java.lang.Object fold(androidx.compose.runtime.MonotonicFrameClock,java.lang.Object,kotlin.jvm.functions.Function2)
     public static kotlin.coroutines.CoroutineContext$Element get(androidx.compose.runtime.MonotonicFrameClock,kotlin.coroutines.CoroutineContext$Key)
     public static final java.lang.String getClassSimpleName(java.lang.Object)

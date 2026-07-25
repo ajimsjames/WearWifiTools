@@ -22,35 +22,50 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.wear.compose.material.Text
 import com.example.wearwifitools.wifi.CompassSensorHelper
+import com.example.wearwifitools.wifi.NearbyWifiNetwork
 import com.example.wearwifitools.wifi.WifiDiagnosticData
 import kotlinx.coroutines.flow.collectLatest
 
 @Composable
 fun RadarScreen(
-    data: WifiDiagnosticData
+    data: WifiDiagnosticData,
+    targetAp: NearbyWifiNetwork?,
+    onClearTarget: () -> Unit
 ) {
     val context = LocalContext.current
     val compassHelper = remember { CompassSensorHelper(context) }
     var currentHeading by remember { mutableStateOf(0f) }
 
+    // Active tracking target details
+    val activeSsid = targetAp?.ssid ?: data.ssid
+    val activeRssi = targetAp?.rssi ?: data.rssi
+    val isConnected = if (targetAp != null) true else data.isConnected
+
     // Map storing moving average of RSSI samples per 45° sector (0..7)
     val sectorSamples = remember { mutableStateMapOf<Int, List<Int>>() }
     var peakSector by remember { mutableStateOf<Int?>(null) }
 
+    // Reset samples if target AP changes
+    LaunchedEffect(targetAp?.bssid) {
+        sectorSamples.clear()
+        peakSector = null
+    }
+
     // Listen to compass orientation sensor
-    LaunchedEffect(Unit) {
+    LaunchedEffect(activeRssi) {
         compassHelper.getHeadingFlow().collectLatest { azimuth ->
             currentHeading = azimuth
 
-            // Sample current RSSI at current compass azimuth
-            if (data.isConnected && data.rssi > -99) {
+            // Sample current active RSSI at current compass azimuth
+            if (activeRssi > -99) {
                 val sector = (((azimuth + 22.5f) % 360f) / 45f).toInt().coerceIn(0, 7)
                 val currentList = sectorSamples[sector] ?: emptyList()
-                val updatedList = (currentList + data.rssi).takeLast(6) // Keep last 6 samples per sector
+                val updatedList = (currentList + activeRssi).takeLast(6) // Keep last 6 samples per sector
                 sectorSamples[sector] = updatedList
 
                 // Calculate average RSSI per sampled sector
@@ -100,7 +115,7 @@ fun RadarScreen(
 
     val sweptCount = sectorSamples.size
     val directionHint = when {
-        sweptCount < 3 -> "Turn 360° to sweep signals ($sweptCount/8)"
+        sweptCount < 3 -> "Turn 360° to sweep ($sweptCount/8)"
         relativeAngle in 337.5..360.0 || relativeAngle in 0.0..22.5 -> "Straight Ahead ⬆️"
         relativeAngle in 22.5..67.5 -> "Slight Right ↗️"
         relativeAngle in 67.5..112.5 -> "To your Right ➡️"
@@ -112,16 +127,16 @@ fun RadarScreen(
     }
 
     val proximityStatus = when {
-        !data.isConnected -> "Offline ❌"
-        data.rssi >= -55 -> "🔥 HOT / VERY CLOSE"
-        data.rssi >= -70 -> "🟢 WARM / APPROACHING"
+        activeRssi <= -99 -> "Searching AP... 🔍"
+        activeRssi >= -55 -> "🔥 HOT / VERY CLOSE"
+        activeRssi >= -70 -> "🟢 WARM / APPROACHING"
         else -> "🧊 COLD / DISTANT"
     }
 
     val proximityColor = when {
-        !data.isConnected -> Color.Red
-        data.rssi >= -55 -> Color(0xFFFF5252)
-        data.rssi >= -70 -> Color(0xFF00E676)
+        activeRssi <= -99 -> Color.Gray
+        activeRssi >= -55 -> Color(0xFFFF5252)
+        activeRssi >= -70 -> Color(0xFF00E676)
         else -> Color(0xFF81D4FA)
     }
 
@@ -137,12 +152,32 @@ fun RadarScreen(
         ) {
             Spacer(modifier = Modifier.height(38.dp))
 
-            Text(
-                text = "🧭 Wi-Fi Direction Radar",
-                color = Color.White,
-                fontSize = 12.sp,
-                fontWeight = FontWeight.Bold
-            )
+            // Target AP Banner
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = "📍 $activeSsid",
+                    color = Color.White,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                if (targetAp != null) {
+                    Spacer(modifier = Modifier.width(4.dp))
+                    Box(
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(4.dp))
+                            .background(Color(0xFFD32F2F))
+                            .clickable { onClearTarget() }
+                            .padding(horizontal = 4.dp, vertical = 1.dp)
+                    ) {
+                        Text("✖ Clear", color = Color.White, fontSize = 7.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
 
             Text(
                 text = proximityStatus,
@@ -155,7 +190,7 @@ fun RadarScreen(
             // 360° Circular Radar Canvas with Sector Heat Ring
             Box(
                 modifier = Modifier
-                    .size(96.dp)
+                    .size(92.dp)
                     .padding(2.dp),
                 contentAlignment = Alignment.Center
             ) {
@@ -178,7 +213,6 @@ fun RadarScreen(
 
                     for (sec in 0..7) {
                         val sectorAngle = sec * 45f
-                        // Relative angle of sector wrt watch heading
                         val relSectorAngle = (sectorAngle - currentHeading + 360f) % 360f
 
                         val secAvg = sectorAverages[sec]
@@ -232,7 +266,7 @@ fun RadarScreen(
 
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(
-                        text = if (data.isConnected) "${data.rssi}" else "--",
+                        text = if (activeRssi > -99) "$activeRssi" else "--",
                         color = Color.White,
                         fontSize = 15.sp,
                         fontWeight = FontWeight.Bold
@@ -249,7 +283,7 @@ fun RadarScreen(
                 modifier = Modifier.padding(top = 2.dp)
             )
 
-            Spacer(modifier = Modifier.height(4.dp))
+            Spacer(modifier = Modifier.height(3.dp))
 
             // Rescan / Recalibrate Button
             Box(

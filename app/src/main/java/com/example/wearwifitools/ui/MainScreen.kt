@@ -39,6 +39,8 @@ fun MainScreen() {
     var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Radar, 2: Nearby APs, 3: Ping, 4: LAN Scan
     var diagnosticData by remember { mutableStateOf(WifiDiagnosticData()) }
     var nearbyNetworks by remember { mutableStateOf(listOf<NearbyWifiNetwork>()) }
+    var selectedTargetAp by remember { mutableStateOf<NearbyWifiNetwork?>(null) }
+
     var isApScanning by remember { mutableStateOf(false) }
     var discoveredDevices by remember { mutableStateOf(listOf<DiscoveredDevice>()) }
     var isLanScanning by remember { mutableStateOf(false) }
@@ -53,17 +55,37 @@ fun MainScreen() {
         if (isApScanning) return
         isApScanning = true
         coroutineScope.launch {
-            nearbyNetworks = wifiHelper.getNearbyWifiNetworks()
+            val scanned = wifiHelper.getNearbyWifiNetworks()
+            nearbyNetworks = scanned
+
+            // Update live RSSI for targeted AP if selected
+            selectedTargetAp?.let { target ->
+                val match = scanned.find { it.bssid == target.bssid }
+                if (match != null) {
+                    selectedTargetAp = match
+                }
+            }
+
             isApScanning = false
         }
     }
 
-    // High-Speed Signal Refresh (400ms when Radar/Signal selected, 2000ms otherwise)
-    LaunchedEffect(selectedTab) {
+    // High-Speed Signal Refresh Loop (400ms when Radar/Signal selected, 2000ms otherwise)
+    LaunchedEffect(selectedTab, selectedTargetAp) {
         focusRequester.requestFocus()
-        val interval = if (selectedTab == 0 || selectedTab == 1) 400L else 2000L
         while (true) {
             diagnosticData = wifiHelper.getDiagnosticData()
+
+            // If a specific target AP is selected, poll nearby AP scan to update its live RSSI
+            if (selectedTargetAp != null) {
+                val scanned = wifiHelper.getNearbyWifiNetworks()
+                val match = scanned.find { it.bssid == selectedTargetAp?.bssid }
+                if (match != null) {
+                    selectedTargetAp = match
+                }
+            }
+
+            val interval = if (selectedTab == 0 || selectedTab == 1) 400L else 2000L
             delay(interval)
         }
     }
@@ -93,11 +115,20 @@ fun MainScreen() {
         // Tab Content
         when (selectedTab) {
             0 -> SignalScreen(data = diagnosticData, onRefresh = { refreshData() })
-            1 -> RadarScreen(data = diagnosticData)
+            1 -> RadarScreen(
+                data = diagnosticData,
+                targetAp = selectedTargetAp,
+                onClearTarget = { selectedTargetAp = null }
+            )
             2 -> NetworksScreen(
                 networks = nearbyNetworks,
+                selectedTargetBssid = selectedTargetAp?.bssid,
                 isScanning = isApScanning,
-                onStartScan = { startApScan() }
+                onStartScan = { startApScan() },
+                onSelectTargetAp = { ap ->
+                    selectedTargetAp = ap
+                    selectedTab = 1 // Switch directly to Radar screen to locate this AP!
+                }
             )
             3 -> PingScreen(data = diagnosticData, onRunPing = { refreshData() })
             4 -> ScanScreen(
