@@ -15,8 +15,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -26,9 +28,6 @@ import androidx.wear.compose.material.Text
 import com.example.wearwifitools.wifi.CompassSensorHelper
 import com.example.wearwifitools.wifi.WifiDiagnosticData
 import kotlinx.coroutines.flow.collectLatest
-import kotlin.math.PI
-import kotlin.math.cos
-import kotlin.math.sin
 
 @Composable
 fun RadarScreen(
@@ -38,8 +37,8 @@ fun RadarScreen(
     val compassHelper = remember { CompassSensorHelper(context) }
     var currentHeading by remember { mutableStateOf(0f) }
 
-    // Map storing highest RSSI recorded per 45° sector (8 sectors)
-    val sectorRssi = remember { mutableStateMapOf<Int, Int>() }
+    // Map storing moving average of RSSI samples per 45° sector (0..7)
+    val sectorSamples = remember { mutableStateMapOf<Int, List<Int>>() }
     var peakSector by remember { mutableStateOf<Int?>(null) }
 
     // Listen to compass orientation sensor
@@ -49,15 +48,17 @@ fun RadarScreen(
 
             // Sample current RSSI at current compass azimuth
             if (data.isConnected && data.rssi > -99) {
-                val sector = ((azimuth + 22.5f) % 360f / 45f).toInt()
-                val prevRssi = sectorRssi[sector] ?: -100
-                if (data.rssi > prevRssi) {
-                    sectorRssi[sector] = data.rssi
-                }
+                val sector = (((azimuth + 22.5f) % 360f) / 45f).toInt().coerceIn(0, 7)
+                val currentList = sectorSamples[sector] ?: emptyList()
+                val updatedList = (currentList + data.rssi).takeLast(6) // Keep last 6 samples per sector
+                sectorSamples[sector] = updatedList
 
-                // Find sector with maximum RSSI
-                val maxEntry = sectorRssi.maxByOrNull { it.value }
-                if (maxEntry != null && maxEntry.value > -95) {
+                // Calculate average RSSI per sampled sector
+                val sectorAverages = sectorSamples.mapValues { it.value.average() }
+
+                // Find sector with maximum average RSSI
+                val maxEntry = sectorAverages.maxByOrNull { it.value }
+                if (maxEntry != null && maxEntry.value > -98) {
                     peakSector = maxEntry.key
                 }
             }
@@ -85,20 +86,21 @@ fun RadarScreen(
     }
 
     LaunchedEffect(relativeAngle) {
-        if (peakSector != null && (relativeAngle < 25f || relativeAngle > 335f)) {
+        if (peakSector != null && (relativeAngle < 22.5f || relativeAngle > 337.5f)) {
             try {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    vibrator.vibrate(VibrationEffect.createOneShot(40, VibrationEffect.DEFAULT_AMPLITUDE))
+                    vibrator.vibrate(VibrationEffect.createOneShot(35, VibrationEffect.DEFAULT_AMPLITUDE))
                 } else {
                     @Suppress("DEPRECATION")
-                    vibrator.vibrate(40)
+                    vibrator.vibrate(35)
                 }
             } catch (e: Exception) {}
         }
     }
 
+    val sweptCount = sectorSamples.size
     val directionHint = when {
-        peakSector == null -> "Turn 360° to scan signal"
+        sweptCount < 3 -> "Turn 360° to sweep signals ($sweptCount/8)"
         relativeAngle in 337.5..360.0 || relativeAngle in 0.0..22.5 -> "Straight Ahead ⬆️"
         relativeAngle in 22.5..67.5 -> "Slight Right ↗️"
         relativeAngle in 67.5..112.5 -> "To your Right ➡️"
@@ -113,7 +115,7 @@ fun RadarScreen(
         !data.isConnected -> "Offline ❌"
         data.rssi >= -55 -> "🔥 HOT / VERY CLOSE"
         data.rssi >= -70 -> "🟢 WARM / APPROACHING"
-        else -> "🧊 COLD / FAR AWAY"
+        else -> "🧊 COLD / DISTANT"
     }
 
     val proximityColor = when {
@@ -150,10 +152,10 @@ fun RadarScreen(
                 modifier = Modifier.padding(bottom = 2.dp)
             )
 
-            // Radar Compass Dial Graphic
+            // 360° Circular Radar Canvas with Sector Heat Ring
             Box(
                 modifier = Modifier
-                    .size(95.dp)
+                    .size(96.dp)
                     .padding(2.dp),
                 contentAlignment = Alignment.Center
             ) {
@@ -161,34 +163,67 @@ fun RadarScreen(
                     val center = Offset(size.width / 2, size.height / 2)
                     val radius = size.minDimension / 2 - 4.dp.toPx()
 
-                    // Draw outer radar circle
+                    // Draw background radar circle
                     drawCircle(
-                        color = Color(0xFF22222B),
+                        color = Color(0xFF1E1E24),
                         radius = radius,
                         center = center
                     )
 
+                    // Draw 8-Sector Bezel Ring showing relative signal strength per sector
+                    val sectorAverages = sectorSamples.mapValues { it.value.average() }
+                    val maxAvg = sectorAverages.values.maxOrNull() ?: -60.0
+                    val minAvg = sectorAverages.values.minOrNull() ?: -90.0
+                    val avgRange = (maxAvg - minAvg).coerceAtLeast(4.0)
+
+                    for (sec in 0..7) {
+                        val sectorAngle = sec * 45f
+                        // Relative angle of sector wrt watch heading
+                        val relSectorAngle = (sectorAngle - currentHeading + 360f) % 360f
+
+                        val secAvg = sectorAverages[sec]
+                        val arcColor = when {
+                            secAvg == null -> Color(0xFF2C2C36) // Unsampled sector
+                            sec == peakSector -> Color(0xFF00E676) // Peak signal sector
+                            else -> {
+                                val normRatio = ((secAvg - minAvg) / avgRange).coerceIn(0.1, 1.0)
+                                Color(0xFF1565C0).copy(alpha = normRatio.toFloat())
+                            }
+                        }
+
+                        // Draw arc segment for sector
+                        drawArc(
+                            color = arcColor,
+                            startAngle = relSectorAngle - 20f - 90f,
+                            sweepAngle = 40f,
+                            useCenter = false,
+                            topLeft = Offset(center.x - radius, center.y - radius),
+                            size = Size(radius * 2, radius * 2),
+                            style = Stroke(width = 5.dp.toPx())
+                        )
+                    }
+
                     // Draw radar crosshairs
                     drawLine(
                         color = Color(0xFF333344),
-                        start = Offset(center.x, center.y - radius),
-                        end = Offset(center.x, center.y + radius),
+                        start = Offset(center.x, center.y - radius + 5.dp.toPx()),
+                        end = Offset(center.x, center.y + radius - 5.dp.toPx()),
                         strokeWidth = 1.dp.toPx()
                     )
                     drawLine(
                         color = Color(0xFF333344),
-                        start = Offset(center.x - radius, center.y),
-                        end = Offset(center.x + radius, center.y),
+                        start = Offset(center.x - radius + 5.dp.toPx(), center.y),
+                        end = Offset(center.x + radius - 5.dp.toPx(), center.y),
                         strokeWidth = 1.dp.toPx()
                     )
 
-                    // Draw rotating compass arrow pointing to router relative angle
+                    // Draw rotating compass arrow pointing to peak router direction
                     rotate(degrees = relativeAngle, pivot = center) {
                         val path = Path().apply {
-                            moveTo(center.x, center.y - radius + 6.dp.toPx())
-                            lineTo(center.x - 8.dp.toPx(), center.y + 10.dp.toPx())
+                            moveTo(center.x, center.y - radius + 7.dp.toPx())
+                            lineTo(center.x - 7.dp.toPx(), center.y + 10.dp.toPx())
                             lineTo(center.x, center.y + 4.dp.toPx())
-                            lineTo(center.x + 8.dp.toPx(), center.y + 10.dp.toPx())
+                            lineTo(center.x + 7.dp.toPx(), center.y + 10.dp.toPx())
                             close()
                         }
                         drawPath(path, color = Color(0xFF00E676))
@@ -222,13 +257,13 @@ fun RadarScreen(
                     .clip(RoundedCornerShape(8.dp))
                     .background(Color(0xFF1565C0))
                     .clickable {
-                        sectorRssi.clear()
+                        sectorSamples.clear()
                         peakSector = null
                     }
                     .padding(horizontal = 10.dp, vertical = 3.dp),
                 contentAlignment = Alignment.Center
             ) {
-                Text("🔄 Calibrate Sweep", color = Color.White, fontSize = 8.sp, fontWeight = FontWeight.Bold)
+                Text("🔄 Reset & Turn 360°", color = Color.White, fontSize = 8.sp, fontWeight = FontWeight.Bold)
             }
         }
     }

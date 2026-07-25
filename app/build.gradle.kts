@@ -11,8 +11,8 @@ android {
         applicationId = "com.example.wearwifitools"
         minSdk = 30
         targetSdk = 33
-        versionCode = 6
-        versionName = "1.4.0"
+        versionCode = 7
+        versionName = "1.4.1"
 
         vectorDrawables {
             useSupportLibrary = true

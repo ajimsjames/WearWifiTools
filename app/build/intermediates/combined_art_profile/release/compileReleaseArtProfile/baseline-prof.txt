@@ -2823,7 +2823,7 @@ HSPLM/h;->m(FF)V
 LM/i;
 HSPLM/i;-><clinit>()V
 LM/j;
-HSPLM/j;-><init>(F)V
+HSPLM/j;-><init>(FII)V
 HSPLM/j;->equals(Ljava/lang/Object;)Z
 HSPLM/j;->hashCode()I
 HSPLM/j;->toString()Ljava/lang/String;
@@ -4669,12 +4669,12 @@ HSPLI0/h;->K([Ljava/lang/Object;)Ljava/util/List;
 HSPLa1/k;->a0(Ljava/lang/Iterable;)I
 HSPLa1/l;->b0(Ljava/util/List;Ljava/util/Comparator;)V
 HSPLa1/m;->c0(Ljava/lang/Iterable;Ljava/util/Collection;)V
-HSPLa1/n;->d0(Ljava/util/List;)Ljava/lang/Object;
 HSPLa1/n;->e0(Ljava/util/List;)Ljava/lang/Object;
-HSPLa1/n;->h0(Ljava/util/List;)Ljava/lang/Object;
-HSPLa1/n;->i0(Ljava/util/List;Ljava/util/Collection;)Ljava/util/ArrayList;
-HSPLa1/n;->m0(Ljava/lang/Iterable;)Ljava/util/List;
-HSPLa1/n;->n0(Ljava/util/Collection;)Ljava/util/ArrayList;
+HSPLa1/n;->f0(Ljava/util/List;)Ljava/lang/Object;
+HSPLa1/n;->i0(Ljava/util/List;)Ljava/lang/Object;
+HSPLa1/n;->k0(Ljava/util/List;Ljava/util/Collection;)Ljava/util/ArrayList;
+HSPLa1/n;->o0(Ljava/lang/Iterable;)Ljava/util/List;
+HSPLa1/n;->p0(Ljava/util/Collection;)Ljava/util/ArrayList;
 HSPLa1/p;->equals(Ljava/lang/Object;)Z
 HSPLa1/p;->isEmpty()Z
 HSPLa1/p;->size()I

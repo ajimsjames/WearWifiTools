@@ -31862,7 +31862,6 @@ kotlin.collections.CollectionsKt__CollectionsKt:
     private static final java.util.Collection orEmpty(java.util.Collection)
     private static final java.util.List orEmpty(java.util.List)
     public static final java.util.List shuffled(java.lang.Iterable,kotlin.random.Random)
-    public static final void throwCountOverflow()
 kotlin.collections.CollectionsKt__IterablesKt$Iterable$1
 kotlin.collections.CollectionsKt__IterablesKt:
     public void <init>()
@@ -31970,7 +31969,6 @@ kotlin.collections.CollectionsKt___CollectionsKt:
     public static final double averageOfByte(java.lang.Iterable)
     public static final double averageOfDouble(java.lang.Iterable)
     public static final double averageOfFloat(java.lang.Iterable)
-    public static final double averageOfInt(java.lang.Iterable)
     public static final double averageOfLong(java.lang.Iterable)
     public static final double averageOfShort(java.lang.Iterable)
     public static final java.util.List chunked(java.lang.Iterable,int,kotlin.jvm.functions.Function1)
@@ -32065,7 +32063,6 @@ kotlin.collections.CollectionsKt___CollectionsKt:
     private static final java.lang.Object maxOfWith(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
     private static final java.lang.Object maxOfWithOrNull(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
     public static final java.lang.Comparable maxOrNull(java.lang.Iterable)
-    public static final java.lang.Double maxOrNull(java.lang.Iterable)
     public static final java.lang.Float maxOrNull(java.lang.Iterable)
     public static final double maxOrThrow(java.lang.Iterable)
     public static final float maxOrThrow(java.lang.Iterable)
@@ -32082,7 +32079,6 @@ kotlin.collections.CollectionsKt___CollectionsKt:
     private static final java.lang.Float minOfOrNull(java.lang.Iterable,kotlin.jvm.functions.Function1)
     private static final java.lang.Object minOfWith(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
     private static final java.lang.Object minOfWithOrNull(java.lang.Iterable,java.util.Comparator,kotlin.jvm.functions.Function1)
-    public static final java.lang.Double minOrNull(java.lang.Iterable)
     public static final java.lang.Float minOrNull(java.lang.Iterable)
     public static final double minOrThrow(java.lang.Iterable)
     public static final float minOrThrow(java.lang.Iterable)
@@ -32155,7 +32151,6 @@ kotlin.collections.CollectionsKt___CollectionsKt:
     private static final int sumOfUInt(java.lang.Iterable,kotlin.jvm.functions.Function1)
     private static final long sumOfULong(java.lang.Iterable,kotlin.jvm.functions.Function1)
     public static final java.util.List take(java.lang.Iterable,int)
-    public static final java.util.List takeLast(java.util.List,int)
     public static final java.util.List takeLastWhile(java.util.List,kotlin.jvm.functions.Function1)
     public static final java.util.List takeWhile(java.lang.Iterable,kotlin.jvm.functions.Function1)
     public static final boolean[] toBooleanArray(java.util.Collection)
@@ -32608,7 +32603,6 @@ kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt:
 kotlin.coroutines.jvm.internal.Boxing:
     public static final java.lang.Byte boxByte(byte)
     public static final java.lang.Character boxChar(char)
-    public static final java.lang.Double boxDouble(double)
     public static final java.lang.Short boxShort(short)
 kotlin.coroutines.jvm.internal.DebugMetadata:
     public abstract int[] i()
@@ -33375,7 +33369,6 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final boolean byteRangeContains(kotlin.ranges.OpenEndRange,long)
     public static final boolean byteRangeContains(kotlin.ranges.OpenEndRange,short)
     public static final byte coerceAtLeast(byte,byte)
-    public static final double coerceAtLeast(double,double)
     public static final java.lang.Comparable coerceAtLeast(java.lang.Comparable,java.lang.Comparable)
     public static final short coerceAtLeast(short,short)
     public static final byte coerceAtMost(byte,byte)
@@ -45975,7 +45968,6 @@ kotlin.collections.CollectionsKt__IteratorsKt
 kotlin.collections.CollectionsKt__MutableCollectionsKt
 kotlin.collections.CollectionsKt___CollectionsJvmKt
 kotlin.collections.CollectionsKt___CollectionsKt:
-    public static java.util.ArrayList plus(java.util.List,java.lang.Object)
     public static final java.util.List toMutableList(java.lang.Iterable)
 kotlin.collections.EmptyIterator:
     public static java.lang.Void next()
