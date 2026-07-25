@@ -34,7 +34,7 @@ fun NetworksScreen(
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
-            contentPadding = PaddingValues(top = 28.dp, bottom = 20.dp)
+            contentPadding = PaddingValues(top = 40.dp, bottom = 24.dp)
         ) {
             item {
                 Text(
