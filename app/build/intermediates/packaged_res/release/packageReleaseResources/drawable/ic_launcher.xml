@@ -1,53 +1,46 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    
-    <!-- Background Circle -->
+    <!-- Samsung One UI Watch Squircle Background -->
     <path
-        android:fillColor="#0D1B2A"
-        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
-
-    <!-- Outer Accent Ring -->
+        android:pathData="M 54,4 C 78.5,4 96,4 100,20 C 104,36 104,72 100,88 C 96,104 78.5,104 54,104 C 29.5,104 12,104 8,88 C 4,72 4,36 8,20 C 12,4 29.5,4 54,4 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="4"
+                android:endX="54"
+                android:endY="104"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF0288D1" />
+                <item android:offset="1.0" android:color="#FF01579B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Wi-Fi Radar Concentric Arcs -->
     <path
-        android:strokeColor="#1E3A8A"
-        android:strokeWidth="3"
-        android:pathData="M54,54m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0" />
-
-    <!-- Wi-Fi Outer Arc -->
+        android:pathData="M 28,68 A 36,36 0 0,1 80,68"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
     <path
-        android:strokeColor="#00E5FF"
-        android:strokeWidth="4"
-        android:strokeLineCap="round"
-        android:pathData="M 28,42 A 32,32 0 0,1 80,42" />
-
-    <!-- Wi-Fi Middle Arc -->
+        android:pathData="M 37,74 A 24,24 0 0,1 71,74"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
     <path
-        android:strokeColor="#0288D1"
-        android:strokeWidth="4"
-        android:strokeLineCap="round"
-        android:pathData="M 36,52 A 22,22 0 0,1 72,52" />
-
-    <!-- Wi-Fi Inner Arc -->
+        android:pathData="M 46,80 A 12,12 0 0,1 62,80"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
+    <!-- Center Dot -->
     <path
-        android:strokeColor="#00E676"
-        android:strokeWidth="4"
-        android:strokeLineCap="round"
-        android:pathData="M 44,62 A 12,12 0 0,1 64,62" />
-
-    <!-- Center Radar Dot -->
+        android:pathData="M 54,84 m -4,0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0"
+        android:fillColor="#FFFFFFFF" />
+    <!-- Green Compass Radar Arrow -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M54,72m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
-
-    <!-- Rotating Green Compass Needle Overlay -->
-    <path
-        android:fillColor="#00E676"
-        android:pathData="M 54,28 L 60,50 L 54,46 L 48,50 Z" />
-
-    <!-- South Compass Needle Overlay (Dark) -->
-    <path
-        android:fillColor="#546E7A"
-        android:pathData="M 54,70 L 60,50 L 54,46 L 48,50 Z" />
+        android:pathData="M 54,22 L 62,42 L 54,36 L 46,42 Z"
+        android:fillColor="#FF00E676" />
 </vector>

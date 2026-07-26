@@ -1,1 +1,1 @@
-http://schemas.android.com/apk/res-auto;;${\:app*release*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher.xml,+drawable:ic_launcher,0,F;
+http://schemas.android.com/apk/res-auto;;${\:app*release*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_round.xml,${\:app*release*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher.xml,+drawable:ic_launcher_round,0,F;ic_launcher,1,F;

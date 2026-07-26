@@ -36,7 +36,7 @@ fun MainScreen() {
     val coroutineScope = rememberCoroutineScope()
     val focusRequester = remember { FocusRequester() }
 
-    var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Radar, 2: Nearby APs, 3: Ping, 4: LAN Scan
+    var selectedTab by remember { mutableStateOf(0) } // 0: Signal, 1: Radar, 2: Nearby APs, 3: Ping, 4: LAN Scan, 5: About
     var diagnosticData by remember { mutableStateOf(WifiDiagnosticData()) }
     var nearbyNetworks by remember { mutableStateOf(listOf<NearbyWifiNetwork>()) }
     var selectedTargetAp by remember { mutableStateOf<NearbyWifiNetwork?>(null) }
@@ -58,7 +58,6 @@ fun MainScreen() {
             val scanned = wifiHelper.getNearbyWifiNetworks()
             nearbyNetworks = scanned
 
-            // Update live RSSI for targeted AP if selected
             selectedTargetAp?.let { target ->
                 val match = scanned.find { it.bssid == target.bssid }
                 if (match != null) {
@@ -70,13 +69,12 @@ fun MainScreen() {
         }
     }
 
-    // High-Speed Signal Refresh Loop (400ms when Radar/Signal selected, 2000ms otherwise)
+    // High-Speed Signal Refresh Loop
     LaunchedEffect(selectedTab, selectedTargetAp) {
         focusRequester.requestFocus()
         while (true) {
             diagnosticData = wifiHelper.getDiagnosticData()
 
-            // If a specific target AP is selected, poll nearby AP scan to update its live RSSI
             if (selectedTargetAp != null) {
                 val scanned = wifiHelper.getNearbyWifiNetworks()
                 val match = scanned.find { it.bssid == selectedTargetAp?.bssid }
@@ -103,7 +101,7 @@ fun MainScreen() {
             .background(Color.Black)
             .onRotaryScrollEvent { event ->
                 if (event.verticalScrollPixels > 0) {
-                    if (selectedTab < 4) selectedTab++
+                    if (selectedTab < 5) selectedTab++
                 } else if (event.verticalScrollPixels < 0) {
                     if (selectedTab > 0) selectedTab--
                 }
@@ -127,7 +125,7 @@ fun MainScreen() {
                 onStartScan = { startApScan() },
                 onSelectTargetAp = { ap ->
                     selectedTargetAp = ap
-                    selectedTab = 1 // Switch directly to Radar screen to locate this AP!
+                    selectedTab = 1
                 }
             )
             3 -> PingScreen(data = diagnosticData, onRunPing = { refreshData() })
@@ -145,11 +143,12 @@ fun MainScreen() {
                     }
                 }
             )
+            5 -> AboutScreen()
         }
 
         // Curved Bezel Top Navigation Bar
         CurvedLayout(
-            anchor = 270f, // 270° = Top Center of circular display
+            anchor = 270f,
             modifier = Modifier.fillMaxSize()
         ) {
             curvedComposable {
@@ -179,6 +178,12 @@ fun MainScreen() {
             curvedComposable {
                 TabPill("🔍 LAN", selected = selectedTab == 4) { selectedTab = 4 }
             }
+            curvedComposable {
+                Spacer(modifier = Modifier.width(2.dp))
+            }
+            curvedComposable {
+                TabPill("⚙️ About", selected = selectedTab == 5) { selectedTab = 5 }
+            }
         }
 
         // Bottom Author Credits
@@ -198,7 +203,7 @@ fun TabPill(text: String, selected: Boolean, onClick: () -> Unit) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(8.dp))
-            .background(if (selected) Color(0xFF1565C0) else Color(0xFF2C2C2E))
+            .background(if (selected) Color(0xFF0288D1) else Color(0xFF2C2C2E))
             .clickable { onClick() }
             .padding(horizontal = 4.dp, vertical = 2.dp)
     ) {
