@@ -11,7 +11,7 @@ android {
         applicationId = "com.ajimsjames.wearwifitools"
         minSdk = 30
         targetSdk = 33
-        versionCode = 14
+        versionCode = 11
         versionName = "2.2.0"
 
         vectorDrawables {
