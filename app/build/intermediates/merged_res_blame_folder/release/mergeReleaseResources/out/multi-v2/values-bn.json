@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wearwifitools.app-mergeReleaseResources-55:/values-bn/values-bn.xml",
+            "outputFile": "com.ajimsjames.wearwifitools.app-mergeReleaseResources-55:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "/home/aju/.gradle/caches/transforms-3/a66a557c50d7ba892bc505e132875d3b/transformed/ui-release/res/values-bn/values-bn.xml",

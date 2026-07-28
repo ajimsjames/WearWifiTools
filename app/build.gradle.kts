@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.wearwifitools"
+    namespace = "com.ajimsjames.wearwifitools"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.wearwifitools"
+        applicationId = "com.ajimsjames.wearwifitools"
         minSdk = 30
         targetSdk = 33
-        versionCode = 12
-        versionName = "1.7.0"
+        versionCode = 13
+        versionName = "2.0.0"
 
         vectorDrawables {
             useSupportLibrary = true

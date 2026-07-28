@@ -4,15 +4,15 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.wearwifitools",
+  "applicationId": "com.ajimsjames.wearwifitools",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 12,
-      "versionName": "1.7.0",
+      "versionCode": 13,
+      "versionName": "2.0.0",
       "outputFile": "AndroidManifest.xml"
     }
   ],
