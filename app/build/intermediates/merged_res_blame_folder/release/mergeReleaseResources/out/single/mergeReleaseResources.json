@@ -6,5 +6,13 @@
     {
         "merged": "com.ajimsjames.wearwifitools.app-release-57:/drawable_ic_launcher_round.xml.flat",
         "source": "com.ajimsjames.wearwifitools.app-main-58:/drawable/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearwifitools.app-release-57:/drawable_ic_launcher.xml.flat",
+        "source": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearwifitools.app-main-58:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearwifitools.app-release-57:/drawable_ic_launcher_round.xml.flat",
+        "source": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearwifitools.app-main-58:/drawable/ic_launcher_round.xml"
     }
 ]
