@@ -214,4 +214,37 @@ class WifiManagerHelper(private val context: Context) {
 
         foundList
     }
+
+    suspend fun runSpeedtest(onProgress: (Float) -> Unit): Float = withContext(Dispatchers.IO) {
+        var totalBytes = 0L
+        val startTime = System.currentTimeMillis()
+        try {
+            val url = java.net.URL("https://speed.cloudflare.com/__down?bytes=5000000")
+            val conn = url.openConnection() as java.net.HttpURLConnection
+            conn.connectTimeout = 4000
+            conn.readTimeout = 4000
+            conn.connect()
+            if (conn.responseCode == 200) {
+                val input = conn.inputStream
+                val buffer = ByteArray(8192)
+                var bytesRead: Int
+                while (input.read(buffer).also { bytesRead = it } != -1) {
+                    totalBytes += bytesRead
+                    val elapsedSec = (System.currentTimeMillis() - startTime) / 1000.0
+                    if (elapsedSec > 0) {
+                        val currentMbps = ((totalBytes * 8.0) / (elapsedSec * 1000000.0)).toFloat()
+                        withContext(Dispatchers.Main) { onProgress(currentMbps) }
+                    }
+                    if (System.currentTimeMillis() - startTime > 6000) break
+                }
+                input.close()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        val totalSec = ((System.currentTimeMillis() - startTime) / 1000.0).coerceAtLeast(0.1)
+        val finalMbps = ((totalBytes * 8.0) / (totalSec * 1000000.0)).toFloat()
+        return@withContext finalMbps
+    }
 }
+
