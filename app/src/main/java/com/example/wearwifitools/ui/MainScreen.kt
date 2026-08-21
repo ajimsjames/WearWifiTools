@@ -259,8 +259,10 @@ fun MainScreen() {
         CurvedLayout(
             anchor = 90f, // 90° = Bottom Apex
             anchorType = androidx.wear.compose.foundation.AnchorType.Center,
+            angularDirection = androidx.wear.compose.foundation.CurvedDirection.Angular.CounterClockwise,
             modifier = Modifier.fillMaxSize()
         ) {
+
             curvedComposable {
                 WifiTabPill("Sig", selected = selectedTab == 0) { selectedTab = 0 }
             }
