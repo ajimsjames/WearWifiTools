@@ -1,0 +1,2 @@
+int drawable ic_launcher 0x0
+int drawable ic_launcher_round 0x0

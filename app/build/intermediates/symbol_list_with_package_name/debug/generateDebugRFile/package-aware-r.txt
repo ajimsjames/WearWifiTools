@@ -1,0 +1,3 @@
+com.ajugeorge.wearwifitools
+drawable ic_launcher
+drawable ic_launcher_round

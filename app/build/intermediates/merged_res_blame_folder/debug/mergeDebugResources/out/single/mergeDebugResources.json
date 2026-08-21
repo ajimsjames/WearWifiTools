@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.ajugeorge.wearwifitools.app-debug-52:/drawable_ic_launcher.xml.flat",
+        "source": "com.ajugeorge.wearwifitools.app-main-54:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.ajugeorge.wearwifitools.app-debug-52:/drawable_ic_launcher_round.xml.flat",
+        "source": "com.ajugeorge.wearwifitools.app-main-54:/drawable/ic_launcher_round.xml"
+    }
+]

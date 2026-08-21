@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.wearwifitools"
+    namespace = "com.ajugeorge.wearwifitools"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.wearwifitools"
+        applicationId = "com.ajugeorge.wearwifitools"
         minSdk = 30
         targetSdk = 34
         versionCode = 11
